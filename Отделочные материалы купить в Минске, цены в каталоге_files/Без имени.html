@@ -1,0 +1,2524 @@
+<!doctype html>
+<html lang="en">
+<head>
+     <script src="/assets/page-speed-optimization.js"></script>
+        <title>ВМетре - магазин строительных и отделочных материалов в Минске</title>
+    <base href="https://vmetre.by/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="Интернет-магазин строительных и отделочных материалов Вметре. Быстрая доставка по Минску и всей Беларуси. Большой ассортимент товаров. Скидки. Сертификаты качества на весь товар. Звоните! " />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- <link rel="stylesheet" href="assets/templates/new/styles.css"> -->
+    <!-- <link href="assets/css/aos.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/> -->
+    <!-- <link rel="stylesheet" href="assets/css/fancybox.css"/> -->
+    
+<!-- Google Tag Manager -->
+<!-- <script data-no-defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFHFC5F');</script> -->
+<!-- End Google Tag Manager -->
+
+<script>
+    addTagPageSpeed('link', {type:"text/css", rel:"stylesheet", href:"https://vmetre.by/assets/templates/new/styles.css"});
+    addTagPageSpeed('link', {type:"text/css", rel:"stylesheet", href:"https://vmetre.by/assets/css/aos.css"});
+    addTagPageSpeed('link', {type:"text/css", rel:"stylesheet", href:"https://vmetre.by/assets/css/swiper-bundle.min.css"});
+    addTagPageSpeed('link', {type:"text/css", rel:"stylesheet", href:"https://vmetre.by/assets/css/fancybox.css"});
+    addTagPageSpeed('script', {
+        innerText:"(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KFHFC5F');"
+    });
+</script>
+
+<script>
+    function size3(url){ 
+  if(screen.width<650) url=url.replace('.','-min.');     
+  if(screen.width>1023) url=url.replace('.','-max.');
+  return url;
+}
+
+function late_img_loader(){
+  var img_list=document.querySelectorAll('img[data-src]');
+  var Images= [].slice.call(img_list);
+  if ("IntersectionObserver" in window) {//грузит только в видимой части экрана
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting){
+          let Image= entry.target;
+          Image.onerror= function(){console.log('err1');Image.onerror=function(){};Image.setAttribute('src', Image.getAttribute('data-src'));}
+          Image.onload = function(){ this.style="opacity:1"; delete this.dataset.src;  }
+          Image.src = size3(Image.dataset.src);
+          lazyImageObserver.unobserve(Image);
+        }
+      });
+    });
+    Images.forEach(function(Image){lazyImageObserver.observe(Image);});
+  } 
+  else {// дополнительный метод который будет активирован при отсутствии IntersectionObserver в старых  бр.
+   [].forEach.call(img_list, function(img) {
+          img.onerror =function(){console.log('err2');img.onerror=function(){};img.setAttribute('src', img.getAttribute('data-src'));}
+          img.onload = function(){img.removeAttribute('data-src');this.style="opacity:1"};
+    img.setAttribute('src', size3(img.getAttribute('data-src')));
+   });
+  }
+}  
+
+try{document.addEventListener("DOMContentLoaded", late_img_loader);}
+catch(e){document.onload=late_img_loader;}
+</script>
+    <!--<link type="text/css" rel="stylesheet" href="assets/templates/new/dop.css" />-->
+    <!-- <script src="assets/templates/vmetre/js/jquery-3.5.1.min.js?ver=1649617537" ></script> -->
+    <script>
+        addTagPageSpeed('link', {type:"text/css", rel:"stylesheet", href:"https://vmetre.by/assets/templates/new/dop.css"});
+        addScriptPageSpeed("https://vmetre.by/assets/templates/vmetre/js/jquery-3.5.1.min.js?ver=1649617537");
+    </script>
+
+<link rel="stylesheet" href="/assets/components/msfavorites/css/default.min.css?v=f301bf14" type="text/css" />
+
+<meta name="msfavorites:version" content="3.0.5-beta">
+<meta name="msfavorites:ctx" content="web">
+<meta name="msfavorites:actionUrl" content="/assets/components/msfavorites/action.php">
+
+<link rel="stylesheet" href="/assets/components/minishop2/css/web/default.css?v=57fe2bbf03" type="text/css" />
+<link rel="stylesheet" href="/assets/components/minishop2/css/web/lib/jquery.jgrowl.min.css" type="text/css" />
+<script>miniShop2Config = {"close_all_message":"ms2_message_close_all","cssUrl":"\/assets\/components\/minishop2\/css\/web\/","jsUrl":"\/assets\/components\/minishop2\/js\/web\/","actionUrl":"\/assets\/components\/minishop2\/action.php","ctx":"web","price_format":[2,"."," "],"price_format_no_zeros":true,"weight_format":[3,"."," "],"weight_format_no_zeros":true};</script>
+<link rel="stylesheet" href="/assets/components/comparison/css/default.css" type="text/css" />
+<link rel="stylesheet" href="/assets/components/msearch2/css/web/default.css" type="text/css" />
+
+		<script>
+			if (typeof mse2Config == "undefined") {mse2Config = {"cssUrl":"\/assets\/components\/msearch2\/css\/web\/","jsUrl":"\/assets\/components\/msearch2\/js\/web\/","actionUrl":"\/assets\/components\/msearch2\/action.php"};}
+			if (typeof mse2FormConfig == "undefined") {mse2FormConfig = {};}
+			mse2FormConfig["f03d4a6a7fce7073f012a89d8b67c4dcf0ddc6cc"] = {"autocomplete":"results","queryVar":"query","minQuery":3,"pageId":1};
+		</script>
+<link rel="stylesheet" href="/assets/components/ajaxform/css/default.css" type="text/css" />
+</head>
+<body>
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFHFC5F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!--header-->
+<header>
+    <div class="container header">
+        <div class="header-info">
+            <a  class="header-logo">
+                <img src="/webp/assets/templates/new/images/header-logo.png.webp" alt="">
+            </a>
+            <div class="social">
+                <div>
+                    <div class="footer-menu__contacts-item" style="flex-direction:column;">
+                        
+                        <div class="footer-menu__contacts-item_title">г. Минск, ул. Филимонова 55/3</div>
+                        <div style="display: flex;">
+                          <div class="footer-img__group">
+                            <a href="https://msngr.link/vi/375291310990">
+                                <div class="footer-menu__contacts-item_img viber"></div>
+                            </a>
+                            <a href="https://msngr.link/tg/375291310990">
+                                <div class="footer-menu__contacts-item_img telegram"></div>
+                            </a>
+                        </div>
+                        <a href="tel:+375291310990" class="footer-menu__contacts-item_title">
+                            +375 (29) <span>131-09-90</span>
+                        </a>  
+                        </div>
+                        
+                    </div>
+                    
+                    <!--<div class="footer-menu__contacts-item mobile-hidden">
+                        <div class="footer-img__group">
+                            <a href="">
+                                <div class="footer-menu__contacts-item_img viber"></div>
+                            </a>
+                            <a href="">
+                                <div class="footer-menu__contacts-item_img telegram"></div>
+                            </a>
+                        </div>
+                        <a href="tel:+375293711174" class="footer-menu__contacts-item_title">
+                            +375 (29) <span>371-11-74</span>
+                        </a>
+                        <div class="mobile-visible"></div>
+                    </div>-->
+                </div>
+                <div>
+                    <div class="footer-menu__contacts-item mobile-hidden">
+                        <a href="">
+                            <div class="footer-menu__contacts-item_img time"></div>
+                        </a>
+                        <a href="">
+                            <div class="footer-menu__contacts-item_title">пн-пт 10.00 - 19.00</div>
+                        </a>
+                    </div>
+                    <div class="footer-menu__contacts-item mobile-hidden">
+                        <a href="">
+                            <div class="footer-menu__contacts-item_img time"></div>
+                        </a>
+                        <a href="">
+                            <div class="footer-menu__contacts-item_title">сб-вс 10.00 - 18.00</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-info__icon mobile-hidden">
+                <a href="sales/" class="header-btn__sale">акции
+                    <div class="header-btn__sale-img"></div>
+                </a>
+                <div id="opener_call" class="callback-bt cm-dialog-opener cm-dialog-auto-size " data-ca-target-id="content_call" data-ca-dialog-title="Заказать обратный звонок" rel="nofollow"></div>
+                <a href="https://www.instagram.com/vmetre.by/" target="_blank" class="insta-logo"></a>
+            </div>
+        </div>
+        <nav class="menu-wrapper ">
+            <div class="mobile-logo">
+                <span class="mobile-icon">
+                    <span></span>
+                </span>
+                <ul class="header-nav">
+                    <li>
+                        <span class="burger-menu">
+                            <span class="menu-icon">
+                             <span></span>
+                         </span>
+                             <span class="burger-menu__main-el">Каталог товаров</span>
+                        </span>
+                        <div class="header-menu">
+
+                             <nav class="menu-body hover-menu">
+                                <ul class="menu-hover__body">
+                                <li class="burger-item__info burger-item__info-el1 first">
+                                         <a href="napolnye-pokrytiya/" class="hover-menu-title" >Напольные покрытия</a>
+                                         <span class="burger-logo burger-logo1"></span>
+                                         <ul class="second-menu second-menu-el1"><li class="second-menu__item first"><a href="napolnye-pokrytiya/laminat/" >Ламинат</a></li><li class="second-menu__item "><a href="napolnye-pokrytiya/linoleum/" >Линолеум</a></li><li class="second-menu__item "><a href="napolnye-pokrytiya/terrasnaya-doska/" >Террасная доска (декинг)</a></li><li class="second-menu__item "><a href="napolnye-pokrytiya/vinilovaya-plitka/" >Виниловые полы</a></li><li class="second-menu__item "><a href="napolnye-pokrytiya/kovrolin/" >Ковролин, ковровые покрытия</a></li><li class="second-menu__item "><a href="napolnye-pokrytiya/iskusstvennaya-trava/" >Искусственная трава (газон)</a></li><li class="second-menu__item "><a href="napolnye-pokrytiya/podlozhka/" >Подложка под ламинат</a></li><li class="second-menu__item "><a href="napolnye-pokrytiya/napolnyy-plintus/" >Напольный плинтус</a></li><li class="second-menu__item "><a href="napolnye-pokrytiya/klej-dlya-napolnyix-pokryitij/" >Клей для напольных покрытий</a></li><li class="second-menu__item last"><a href="napolnye-pokrytiya/parketnaya-doska/" >Паркетная доска</a></li></ul>
+                                     </li><li class="burger-item__info burger-item__info-el2 ">
+                                         <a href="otdelochnye-materialy/" class="hover-menu-title" >Отделочные материалы</a>
+                                         <span class="burger-logo burger-logo2"></span>
+                                         <ul class="second-menu second-menu-el2"><li class="second-menu__item first"><a href="otdelochnye-materialy/paneli-pvh/" >Панели ПВХ</a></li><li class="second-menu__item "><a href="otdelochnye-materialy/paneli-mdf/" >Панели МДФ</a></li><li class="second-menu__item "><a href="otdelochnye-materialy/podokonniki/" >Подоконники</a></li><li class="second-menu__item "><a href="otdelochnye-materialy/interernye-reyki/" >Интерьерные рейки</a></li><li class="second-menu__item last"><a href="otdelochnye-materialy/3d-paneli/" >3D Панели</a></li></ul>
+                                     </li><li class="burger-item__info burger-item__info-el3 ">
+                                         <a href="fasadnye-materialy/" class="hover-menu-title" >Фасадные материалы</a>
+                                         <span class="burger-logo burger-logo3"></span>
+                                         <ul class="second-menu second-menu-el3"><li class="second-menu__item first"><a href="fasadnye-materialy/sayding/" >Сайдинг</a></li><li class="second-menu__item "><a href="fasadnye-materialy/komplektuyuschie-dlya-saydinga/" >Комплектующие для сайдинга</a></li><li class="second-menu__item "><a href="fasadnye-materialy/fibrocementnyy-sayding-panel/" >Фиброцементный сайдинг (панель)</a></li><li class="second-menu__item "><a href="fasadnye-materialy/fasadnye-paneli/" >Фасадные панели</a></li><li class="second-menu__item last"><a href="fasadnye-materialy/gibkie-fasadnye-paneli/" >Гибкие фасадные панели</a></li></ul>
+                                     </li><li class="burger-item__info burger-item__info-el4 ">
+                                         <a href="vodostochnye-sistemy/" class="hover-menu-title" >Водосточные системы</a>
+                                     </li><li class="burger-item__info burger-item__info-el5 ">
+                                         <a href="krovlya-sofity/" class="hover-menu-title" >Кровельные материалы</a>
+                                         <span class="burger-logo burger-logo5"></span>
+                                         <ul class="second-menu second-menu-el5"><li class="second-menu__item first"><a href="krovlya-sofity/myagkaya-krovlya/" >Мягкая кровля</a></li><li class="second-menu__item last"><a href="krovlya-sofity/sofity/" >Софиты</a></li></ul>
+                                     </li><li class="burger-item__info burger-item__info-el6 ">
+                                         <a href="podvesnye-potolki/" class="hover-menu-title" >Подвесные потолки</a>
+                                     </li><li class="burger-item__info burger-item__info-el7 ">
+                                         <a href="drevesno-plitnye-materialy/" class="hover-menu-title" >Древесно-плитные материалы</a>
+                                         <span class="burger-logo burger-logo7"></span>
+                                         <ul class="second-menu second-menu-el7"><li class="second-menu__item first"><a href="drevesno-plitnye-materialy/osb-plity/" >ОСБ (OSB) плита</a></li><li class="second-menu__item "><a href="drevesno-plitnye-materialy/ldsp/" >ЛДСП</a></li><li class="second-menu__item last"><a href="drevesno-plitnye-materialy/cementno-struzhechnaya-plita-csp/" >Цементно-стружечная плита (ЦСП)</a></li></ul>
+                                     </li><li class="burger-item__info burger-item__info-el8 last">
+                                         <a href="plitka/" class="hover-menu-title" >Плитка</a>
+                                     </li>  
+                                 </ul>
+                             </nav>
+                         </div>
+                    </li>
+                    <li class="hover-li first"><a href="o-magazine/" class="header-menu__el" >О магазине</a></li><li class="hover-li "><a href="kontakty/" class="header-menu__el" >Контакты</a></li><li class="hover-li "><a href="dostavka-i-oplata/" class="header-menu__el" >Доставка и оплата</a></li><li class="hover-li "><a href="uslugi/" class="header-menu__el" >Услуги</a></li><li class="hover-li last"><a href="vozvrat/" class="header-menu__el" >Возврат</a></li>
+                    <li class="social-info">
+                        <!--<div>
+                            <div class="footer-menu__contacts-item">
+                                <div class="footer-img__group">
+                                    <a href="">
+                                        <div class="footer-menu__contacts-item_img viber"></div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer-menu__contacts-item_img telegram"></div>
+                                    </a>
+                                </div>
+                                <div class="footer-menu__contacts-item_title">
+                                    +375 (29) <span>371-11-74</span>
+                                </div>
+                            </div>
+                        </div>-->
+                        <div>
+                            <div class="footer-menu__contacts-item">
+                                <a href="">
+                                    <div class="footer-menu__contacts-item_img time"></div>
+                                </a>
+                                <a href="">
+                                    <div class="footer-menu__contacts-item_title">пн-пт 10.00 - 19.00</div>
+                                </a>
+                            </div>
+                            <div class="footer-menu__contacts-item">
+                                <div class="footer-menu__contacts-item_img time"></div>
+                                <div class="footer-menu__contacts-item_title">сб-вс 10.00 - 18.00</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="menu-search">
+                <div class="search-btn__wrapper get-click">
+                    <div class="search-logo"></div>
+                </div>
+                <div  class="comparison comparison-default added search-btn__wrapper">
+    <div class="sum count comparison-total">0</div>
+    <a href="sravnenie/?cmp_ids=" class="header-search__icon dynamics"></a>
+</div>
+                <div class="search-btn__wrapper">
+                    <div class="sum count msfavorites-total" data-data-list="default" data-data-type="resource"></div>
+                    <a href="otlozhennyie-tovaryi/" class="header-search__icon like"></a>
+                </div>
+                <div id="msMiniCart" class="search-btn__wrapper">
+    <div class="ms2_total_count sum">0</div>
+    <a href="cart/" class="header-search__icon basket"></a>
+</div>
+                <form data-key="f03d4a6a7fce7073f012a89d8b67c4dcf0ddc6cc" action="rezultatyi-poiska/" method="get" class="msearch2 search-panel" id="mse2_form">
+    <div class="search__inner">
+        <div class="search-logo"></div>
+        <input class="input-search-panel" type="text" name="query" value="" id="search_input" placeholder="Поиск по сайту">
+        <button class="search-panel__close closeBtn" type="button" aria-label="Закрыть поиск" data-search-close=""></button>
+    </div>
+</form>
+            </div>
+        </nav>
+    </div>
+</header>
+    <!--main-slider-->
+<div class=" swiper-container presentation-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide presentation-slider__slide">
+            <div class="container presentation-info__wrapper">
+                <div class="presentation-info">
+                    <h1 class="title">Интернет-магазин отделочных материалов в Минске</h1>
+                    <h2 class="subtitle presentation-subtitle">Большой ассортимент товаров, Вам не надо заказывать у
+                        трех или четырех фирм, у
+                        нас всё есть</h2>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide presentation-slider__slide" style="background: url(/webp/assets/templates/new/images/sl2.jpeg.webp) no-repeat center; background-size: cover;">
+            <div class="container presentation-info__wrapper">
+                <div class="presentation-info">
+                    <h2 class="title presentation-subtitle" style="color: #fff;">Ламинат</h2>
+                    <a href="napolnye-pokrytiya/laminat/" class="main-button">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide presentation-slider__slide" style="background: url(/webp/assets/templates/new/images/sl2.jpg.webp) no-repeat center; background-size: cover;">
+            <div class="container presentation-info__wrapper">
+                <div class="presentation-info">
+                    <h2 class="title presentation-subtitle" style="color: #fff;">Линолеум</h2>
+                    <a href="napolnye-pokrytiya/linoleum/" class="main-button">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide presentation-slider__slide" style="background: url(/webp/assets/templates/new/images/sl3.jpg.webp) no-repeat center; background-size: cover;">
+            <div class="container presentation-info__wrapper">
+                <div class="presentation-info">
+                    <h2 class="title presentation-subtitle" style="color: #fff;">Интерьерные рейки</h2>
+                    <a href="otdelochnye-materialy/interernye-reyki/" class="main-button">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide presentation-slider__slide" style="background: url(/webp/assets/templates/new/images/sl4.jpg.webp) no-repeat center; background-size: cover;">
+            <div class="container presentation-info__wrapper">
+                <div class="presentation-info">
+                    <h2 class="title presentation-subtitle" style="color: #fff;">Виниловые полы</h2>
+                    <a href="napolnye-pokrytiya/vinilovaya-plitka/" class="main-button">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide presentation-slider__slide" style="background: url(/webp/assets/templates/new/images/sl5.jpg.webp) no-repeat center; background-size: cover;">
+            <div class="container presentation-info__wrapper">
+                <div class="presentation-info">
+                    <h2 class="title presentation-subtitle" style="color: #fff;">Террасная доска</h2>
+                    <a href="napolnye-pokrytiya/terrasnaya-doska/" class="main-button">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide presentation-slider__slide" style="background: url(/webp/assets/templates/new/images/sl55.jpg.webp) no-repeat center; background-size: cover;">
+            <div class="container presentation-info__wrapper">
+                <div class="presentation-info">
+                    <h2 class="title presentation-subtitle" style="color: #fff;">Водосточные системы</h2>
+                    <a href="vodostochnye-sistemy/" class="main-button">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide presentation-slider__slide" style="background: url(/webp/assets/templates/new/images/sl6.jpg.webp) no-repeat center; background-size: cover;">
+            <div class="container presentation-info__wrapper">
+                <div class="presentation-info">
+                    <h2 class="title presentation-subtitle" style="color: #fff;">3D Панели</h2>
+                    <a href="otdelochnye-materialy/3d-paneli/" class="main-button">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide presentation-slider__slide" style="background: url(/webp/assets/templates/new/images/sl8.jpg.webp) no-repeat center; background-size: cover;">
+            <div class="slider-img__mobile" style="background: url(/webp/assets/templates/new/images/slide_8_mob.png.webp) no-repeat center; background-size: cover;"></div>
+            <div class="container presentation-info__wrapper">
+                <div class="presentation-info">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination bullets-custom"></div>
+</div>
+
+<!--bts-outline-->
+<div class="container btns-outline__wrapper">
+    <div class="btns-outline">
+        <div class="figure-wrapper">
+            <figure>
+                <img src="/webp/assets/templates/new/images/card-img.png.webp" alt="">
+                <h2 class="subtitle-figure">весь товар сертифицирован</h2>
+            </figure>
+        </div>
+        <div class="figure-wrapper">
+            <figure>
+                <img src="/webp/assets/templates/new/images/card-img.png.webp" alt="">
+                <h2 class="subtitle-figure">акции и скидки</h2>
+            </figure>
+        </div>
+        <div class="figure-wrapper">
+            <figure>
+                <img src="/webp/assets/templates/new/images/card-img.png.webp" alt="">
+                <h2 class="subtitle-figure">наличный и безналичный расчет</h2>
+            </figure>
+        </div>
+        <div class="figure-wrapper">
+            <figure>
+                <img src="/webp/assets/templates/new/images/card-img.png.webp" alt="">
+                <h2 class="subtitle-figure">доставка в любую точку РБ</h2>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<!--<div class="reviews-wrapper-btn get-link" data-goto=".header">
+    <div class="reviews-wrapper-img get-link" data-goto=".header"></div>
+</div>-->
+
+<!--slider-->
+<div class="container content-swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide content-slide">
+            <div class="content-slide__item slide__item-left">
+                <div class="swiper-catch">
+                    <div class="content-slider__info">
+                        <div class="content-slider__title">акция до</div>
+                        <div class="content-slider__title h2">-5%</div>
+                    </div>
+                    <h3 class="subtitle">Для пенсионеров, студентов и новасёлов. Акция действительна при наличии
+                        документов</h3>
+                </div>
+            </div>
+            <div class="content-slide__item slide__item-right">
+                <img src="/webp/assets/templates/new/images/content-slider__img.png.webp" class="content-slide__item-img" alt="">
+                <img src="/webp/assets/templates/new/images/content-slider__img-second.png.webp" class="slide-img__second" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide content-slide">
+            <div class="content-slide__item slide__item-left">
+                <div class="swiper-catch">
+                    <div class="content-slider__info">
+                        <div class="content-slider__title">скидка</div>
+                        <div class="content-slider__title h2">10%</div>
+                    </div>
+                    <h3 class="subtitle">На плинтус при покупке напольного покрытия</h3>
+                </div>
+            </div>
+            <div class="content-slide__item slide__item-right">
+                <img src="/webp/assets/templates/new/images/content-slider__img2.png.webp" class="content-slide__item-img" alt="">
+                <img src="/webp/assets/templates/new/images/content-slider__img-second2.png.webp" class="slide-img__second" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide content-slide">
+            <div class="content-slide__item slide__item-left">
+                <div class="swiper-catch">
+                    <div class="content-slider__info">
+                        <div class="content-slider__title">бесплатная доставка напольных покрытий</div>
+                    </div>
+                    <h3 class="subtitle">* по городу Минску при покупки напольного покрытия от 10 кв.м, по РБ по 20
+                        кв.м</h3>
+                </div>
+            </div>
+            <div class="content-slide__item slide__item-right">
+                <img src="/webp/assets/templates/new/images/content-slider__img3.png.webp" class="content-slide__item-img" alt="">
+                <img src="/webp/assets/templates/new/images/content-slider__img-second3.png.webp" class="slide-img__second" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide content-slide">
+            <div class="content-slide__item slide__item-left">
+                <div class="swiper-catch">
+                    <div class="content-slider__info">
+                        <div class="content-slider__title">бесплатный выезд с образацами + замер </div>
+                    </div>
+                    <h3 class="subtitle">выезд с образцами и замер напольных покрытий БЕСПЛАТНО от 20 м2, до 20 м2
+                        стоимость вызова 15 р.</h3>
+                </div>
+            </div>
+            <div class="content-slide__item slide__item-right">
+                <img src="/webp/assets/templates/new/images/content-slider__img4.png.webp" class="content-slide__item-img" alt="">
+                <img src="/webp/assets/templates/new/images/content-slider__img-second4.png.webp" class="slide-img__second" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="arrow-wrapper">
+        <div class="swiper-pagination fraction-custom"></div>
+        <div class="next-wrapper">
+            <div class="next-wrapper__arrow"></div>
+        </div>
+        <div class="prev-wrapper">
+            <div class="prev-wrapper__arrow"></div>
+        </div>
+    </div>
+
+</div>
+
+<!--tabs-->
+<div class="container tabs-container">
+    <div class="section-info">
+        <div class="title-section">каталог</div>
+    </div>
+</div>
+<div class="container">
+    <div class="section-info">
+        <h2 class="subtitle-section">Напольные покрытия</h2>
+    </div>
+    <div class="tabs-img__wrapper">
+        <div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/grey-harmony-3321.jpg.webp" alt="Паркетная доска">
+    </div>
+    <a href="napolnye-pokrytiya/parketnaya-doska/" class="tab-img__item__desc">Паркетная доска</a>
+</div>
+<div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/linoleum.jpg.webp" alt="Линолеум">
+    </div>
+    <a href="napolnye-pokrytiya/linoleum/" class="tab-img__item__desc">Линолеум</a>
+</div>
+<div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/napolniy-plintus.jpg.webp" alt="Напольный плинтус">
+    </div>
+    <a href="napolnye-pokrytiya/napolnyy-plintus/" class="tab-img__item__desc">Напольный плинтус</a>
+</div>
+<div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/podlogka.jpg.webp" alt="Подложка под ламинат">
+    </div>
+    <a href="napolnye-pokrytiya/podlozhka/" class="tab-img__item__desc">Подложка под ламинат</a>
+</div>
+<div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/travka.jpg.webp" alt="Искусственная трава (газон)">
+    </div>
+    <a href="napolnye-pokrytiya/iskusstvennaya-trava/" class="tab-img__item__desc">Искусственная трава (газон)</a>
+</div>
+<div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/kovrolin.jpg.webp" alt="Ковролин, ковровые покрытия">
+    </div>
+    <a href="napolnye-pokrytiya/kovrolin/" class="tab-img__item__desc">Ковролин, ковровые покрытия</a>
+</div>
+<div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/vinilovie-poli.jpg.webp" alt="Виниловые полы">
+    </div>
+    <a href="napolnye-pokrytiya/vinilovaya-plitka/" class="tab-img__item__desc">Виниловые полы</a>
+</div>
+<div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/terasnaya-doska.jpg.webp" alt="Террасная доска (декинг)">
+    </div>
+    <a href="napolnye-pokrytiya/terrasnaya-doska/" class="tab-img__item__desc">Террасная доска (декинг)</a>
+</div>
+<div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/laminat.jpg.webp" alt="Ламинат">
+    </div>
+    <a href="napolnye-pokrytiya/laminat/" class="tab-img__item__desc">Ламинат</a>
+</div>
+    </div>
+    <div class="tab-wrapper">
+        
+<a href="napolnye-pokrytiya/klej-dlya-napolnyix-pokryitij/" class="tab"><span>Клей для напольных покрытий</span></a>
+
+
+
+
+
+
+
+
+    </div>
+</div>
+<div class="container">
+    <div class="section-info">
+        <h2 class="subtitle-section">Отделочные материалы</h2>
+    </div>
+    <div class="tabs-img__wrapper">
+        <div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/interernie-reiki.jpg.webp" alt="Интерьерные рейки">
+    </div>
+    <a href="otdelochnye-materialy/interernye-reyki/" class="tab-img__item__desc">Интерьерные рейки</a>
+</div>
+<div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/paneli-mdf.jpg.webp" alt="Панели МДФ">
+    </div>
+    <a href="otdelochnye-materialy/paneli-mdf/" class="tab-img__item__desc">Панели МДФ</a>
+</div>
+<div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/podokonniki.jpg.webp" alt="Подоконники">
+    </div>
+    <a href="otdelochnye-materialy/podokonniki/" class="tab-img__item__desc">Подоконники</a>
+</div>
+<div class="tab-img__item">
+    <div class="tab-img__item-wrapper_img">
+        <img src="/webp/doc/images/kategorii/paneli-pvh.jpg.webp" alt="Панели ПВХ">
+    </div>
+    <a href="otdelochnye-materialy/paneli-pvh/" class="tab-img__item__desc">Панели ПВХ</a>
+</div>
+    </div>
+    <div class="tab-wrapper">
+        
+<a href="otdelochnye-materialy/3d-paneli/" class="tab"><span>3D Панели</span></a>
+
+
+
+    </div>
+</div>
+<div class="container">
+    <div class="section-info">
+        <h2 class="subtitle-section">Фасадные материалы</h2>
+    </div>
+    <div class="tab-wrapper"><a href="fasadnye-materialy/sayding/" class="tab"><span>Сайдинг</span></a><a href="fasadnye-materialy/komplektuyuschie-dlya-saydinga/" class="tab"><span>Комплектующие для сайдинга</span></a><a href="fasadnye-materialy/fibrocementnyy-sayding-panel/" class="tab"><span>Фиброцементный сайдинг (панель)</span></a><a href="fasadnye-materialy/fasadnye-paneli/" class="tab"><span>Фасадные панели</span></a><a href="fasadnye-materialy/gibkie-fasadnye-paneli/" class="tab"><span>Гибкие фасадные панели</span></a></div>
+</div><div class="container">
+    <div class="section-info">
+        <h2 class="subtitle-section">Кровельные материалы</h2>
+    </div>
+    <div class="tab-wrapper"><a href="krovlya-sofity/myagkaya-krovlya/" class="tab"><span>Мягкая кровля</span></a><a href="krovlya-sofity/sofity/" class="tab"><span>Софиты</span></a></div>
+</div><div class="container">
+    <div class="section-info">
+        <h2 class="subtitle-section">Древесно-плитные материалы</h2>
+    </div>
+    <div class="tab-wrapper"><a href="drevesno-plitnye-materialy/osb-plity/" class="tab"><span>ОСБ (OSB) плита</span></a><a href="drevesno-plitnye-materialy/ldsp/" class="tab"><span>ЛДСП</span></a><a href="drevesno-plitnye-materialy/cementno-struzhechnaya-plita-csp/" class="tab"><span>Цементно-стружечная плита (ЦСП)</span></a></div>
+</div>
+
+<!--popular goods-->
+<div class="popular-goods">
+    <div class="container title-section">ПОПУЛЯРНЫЕ ТОВАРЫ</div>
+    <div class="popular-goods__slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-grand-line-t4-korichnevyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         
+        </div>
+        <img src="/webp/assets/images/products/112/small/sofit-t4-chastichno-perforirovannyij-grand-line-30-korichnevyij.jpg.webp" alt="Софит Grand Line T4 коричневый с частичной перфорацией" title="Софит Grand Line T4 коричневый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="112">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-grand-line-t4-korichnevyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Grand Line T4 коричневый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">18.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-grand-line-t4-belyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         
+        </div>
+        <img src="/webp/assets/images/products/115/small/sofit-t4-chastichno-perforirovannyij-grand-line-30-belyij.jpg.webp" alt="Софит Grand Line T4 белый с частичной перфорацией" title="Софит Grand Line T4 белый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="115">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-grand-line-t4-belyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Grand Line T4 белый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">17.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-vox-vila-korichnevyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/119/small/chast-brown-800x800.jpg.webp" alt="Софит VOX Vilo Коричневый с частичной перфорацией" title="Софит VOX Vilo Коричневый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="119">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-vox-vila-korichnevyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит VOX Vilo Коричневый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-vox-vilo-grafitovyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/121/small/chast-grafit-800x800.jpg.webp" alt="Софит VOX Vilo Графитовый с частичной перфорацией" title="Софит VOX Vilo Графитовый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="121">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-vox-vilo-grafitovyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит VOX Vilo Графитовый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-docke-standart-plombir-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         
+        </div>
+        <img src="/webp/assets/images/products/125/small/soffit-s-tsp-plombir.jpg.webp" alt="Софит Docke Standart Пломбир с частичной перфорацией" title="Софит Docke Standart Пломбир с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="125">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-docke-standart-plombir-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Docke Standart Пломбир с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">16.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-docke-standart-grafit-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         
+        </div>
+        <img src="/webp/assets/images/products/126/small/soffit-s-tsp-grafit.jpg.webp" alt="Софит Docke Standart Графит с частичной перфорацией" title="Софит Docke Standart Графит с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="126">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-docke-standart-grafit-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Docke Standart Графит с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">17 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-docke-standart-shokolad-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         
+        </div>
+        <img src="/webp/assets/images/products/127/small/soffit-s-tsp-shokolad.jpg.webp" alt="Софит Docke Standart Шоколад  с частичной перфорацией" title="Софит Docke Standart Шоколад  с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="127">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-docke-standart-shokolad-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Docke Standart Шоколад  с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">17 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-korichnevyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">10%</div> 
+        </div>
+        <img src="/webp/assets/images/products/146/small/0-0000-sofit-korichnevyj-chastichnaya-perforaciya-x-505.jpg.webp" alt="Софит Ю-пласт classic коричневый с частичной перфорацией" title="Софит Ю-пласт classic коричневый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="146">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-korichnevyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Ю-пласт classic коричневый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18.13</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">16.15 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-07-korichnevyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/185/small/chast-brown-800x800.jpg.webp" alt="Софит Айдахо VSV-07 Коричневый с частичной перфорацией" title="Софит Айдахо VSV-07 Коричневый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="185">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-07-korichnevyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Айдахо VSV-07 Коричневый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-07-grafitovyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/187/small/chast-grafit-800x800.jpg.webp" alt="Софит Айдахо VSV-07 Графитовый с частичной перфорацией" title="Софит Айдахо VSV-07 Графитовый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="187">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-07-grafitovyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Айдахо VSV-07 Графитовый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="fasadnye-materialy/sayding/sayding-grand-line-klassik-d4-bezhevyy/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">32%</div> 
+        </div>
+        <img src="/webp/assets/images/products/663/small/bezhevyi-big.jpg.webp" alt="Сайдинг Grand Line Классик D4 slim Бежевый" title="Сайдинг Grand Line Классик D4 slim Бежевый">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="663">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="fasadnye-materialy/sayding/sayding-grand-line-klassik-d4-bezhevyy/" class="tab-img__item__desc">Сайдинг Grand Line Классик D4 slim Бежевый</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">14.31</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">9.72 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="fasadnye-materialy/sayding/sayding-grand-line-klassik-d4-slim-vanilnyy/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">32%</div> 
+        </div>
+        <img src="/webp/assets/images/products/664/small/vanilnyi-big.jpg.webp" alt="Сайдинг Grand Line Классик D4 slim Ванильный" title="Сайдинг Grand Line Классик D4 slim Ванильный">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="664">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="fasadnye-materialy/sayding/sayding-grand-line-klassik-d4-slim-vanilnyy/" class="tab-img__item__desc">Сайдинг Grand Line Классик D4 slim Ванильный</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">14.31</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">9.72 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="fasadnye-materialy/sayding/sayding-vox-vsv-03-vilo-bezhevyy/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">16%</div> 
+        </div>
+        <img src="/webp/assets/images/products/702/small/vsv-beige.jpg.webp" alt="Сайдинг VOX VSV-03 Vilo Бежевый" title="Сайдинг VOX VSV-03 Vilo Бежевый">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="702">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="fasadnye-materialy/sayding/sayding-vox-vsv-03-vilo-bezhevyy/" class="tab-img__item__desc">Сайдинг VOX VSV-03 Vilo Бежевый</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">11</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">9.2 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="fasadnye-materialy/sayding/sayding-yu-plast-stoun-haus-slanec-seryy/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         
+        </div>
+        <img src="/webp/assets/images/products/752/small/0-0013-slanec-svetlo-seryj.jpg.webp" alt="Сайдинг Ю-пласт Стоун хаус Сланец серый" title="Сайдинг Ю-пласт Стоун хаус Сланец серый">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="752">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="fasadnye-materialy/sayding/sayding-yu-plast-stoun-haus-slanec-seryy/" class="tab-img__item__desc">Сайдинг Ю-пласт Стоун хаус Сланец серый</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">13.16 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="fasadnye-materialy/sayding/sayding-docke-bergart-kedrovyy-oreh/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         
+        </div>
+        <img src="/webp/assets/images/products/861/small/bergart-oreh.jpg.webp" alt="Сайдинг Docke Bergart Кедровый орех" title="Сайдинг Docke Bergart Кедровый орех">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="861">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="fasadnye-materialy/sayding/sayding-docke-bergart-kedrovyy-oreh/" class="tab-img__item__desc">Сайдинг Docke Bergart Кедровый орех</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-black-dub-gornyy-svetlyy-fp51/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         
+        </div>
+        <img src="/webp/assets/images/products/1629/small/51.jpg.webp" alt="Ламинат Kastamonu Black Дуб Горный Светлый FP51" title="Ламинат Kastamonu Black Дуб Горный Светлый FP51">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="1629">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-black-dub-gornyy-svetlyy-fp51/" class="tab-img__item__desc">Ламинат Kastamonu Black Дуб Горный Светлый FP51</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">32.85 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-black-dub-severnyy-fp52/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         
+        </div>
+        <img src="/webp/assets/images/products/1630/small/kastamonu-floorpan-black-052-enl.jpg.webp" alt="Ламинат Kastamonu Black Дуб Северный FP52" title="Ламинат Kastamonu Black Дуб Северный FP52">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="1630">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-black-dub-severnyy-fp52/" class="tab-img__item__desc">Ламинат Kastamonu Black Дуб Северный FP52</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">32.85 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-blue-dub-alen-fp703/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">8%</div> 
+        </div>
+        <img src="/webp/assets/images/products/1631/small/703-1.jpg.webp" alt="Ламинат Kastamonu Blue Дуб Ален FP703" title="Ламинат Kastamonu Blue Дуб Ален FP703">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="1631">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-blue-dub-alen-fp703/" class="tab-img__item__desc">Ламинат Kastamonu Blue Дуб Ален FP703</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">36.1</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">32.9 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-blue-dub-nortlend-fp707-ru/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">17%</div> 
+        </div>
+        <img src="/webp/assets/images/products/1633/small/fp707-pack-02-copy.jpg.webp" alt="Ламинат Kastamonu Blue Дуб Нортленд FP707" title="Ламинат Kastamonu Blue Дуб Нортленд FP707">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="1633">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-blue-dub-nortlend-fp707-ru/" class="tab-img__item__desc">Ламинат Kastamonu Blue Дуб Нортленд FP707</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">36.1</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">29.9 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyy-pol-polystyl-cosmic-stardust/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         
+        </div>
+        <img src="/webp/assets/images/products/1653/small/stardust.jpg.webp" alt="Виниловый пол Polystyl Cosmic Stardust" title="Виниловый пол Polystyl Cosmic Stardust">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="1653">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyy-pol-polystyl-cosmic-stardust/" class="tab-img__item__desc">Виниловый пол Polystyl Cosmic Stardust</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">65.11 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+
+        </div>
+        <div class="swiper-pagination bullets-custom-popular__goods"></div>
+
+    </div>
+</div>
+
+<!--new goods-->
+<div class="popular-goods">
+    <div class="container title-section">новые ТОВАРЫ</div>
+    <div class="popular-goods__slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-09-dub-oregon/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9119/small/cm-floor-parkett-09-dub-oregon.jpg.webp" alt="Виниловый пол CM Floor Parkett 09 Дуб Орегон" title="Виниловый пол CM Floor Parkett 09 Дуб Орегон">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9119">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-09-dub-oregon/" class="tab-img__item__desc">Виниловый пол CM Floor Parkett 09 Дуб Орегон</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">85 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-13-dub-stokgolm/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9120/small/cm-floor-parkett-13-dub-stokgolm.jpg.webp" alt="Виниловый пол CM Floor Parkett 13 Дуб Стокгольм" title="Виниловый пол CM Floor Parkett 13 Дуб Стокгольм">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9120">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-13-dub-stokgolm/" class="tab-img__item__desc">Виниловый пол CM Floor Parkett 13 Дуб Стокгольм</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">85 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-14-dub-viski/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9121/small/cm-floor-parkett-14-dub-viski.jpg.webp" alt="Виниловый пол CM Floor Parkett 14 Дуб Виски" title="Виниловый пол CM Floor Parkett 14 Дуб Виски">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9121">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-14-dub-viski/" class="tab-img__item__desc">Виниловый пол CM Floor Parkett 14 Дуб Виски</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">85 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-16-dub-umeo/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9122/small/cm-floor-parkett-16-dub-umeo.jpg.webp" alt="Виниловый пол CM Floor Parkett 16 Дуб Умео" title="Виниловый пол CM Floor Parkett 16 Дуб Умео">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9122">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-16-dub-umeo/" class="tab-img__item__desc">Виниловый пол CM Floor Parkett 16 Дуб Умео</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">85 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-28-orex/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9123/small/cm-floor-parkett-28-orex.jpg.webp" alt="Виниловый пол CM Floor Parkett 28 Орех" title="Виниловый пол CM Floor Parkett 28 Орех">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9123">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-28-orex/" class="tab-img__item__desc">Виниловый пол CM Floor Parkett 28 Орех</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">85 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-29-dub-venge/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9124/small/cm-floor-parkett-29-dub-venge.jpg.webp" alt="Виниловый пол CM Floor Parkett 29 Дуб Венге" title="Виниловый пол CM Floor Parkett 29 Дуб Венге">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9124">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-cm-floor-parkett-29-dub-venge/" class="tab-img__item__desc">Виниловый пол CM Floor Parkett 29 Дуб Венге</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">85 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-jejl-61/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9301/small/jejl-3.jpg.webp" alt="Ламинат Kastamonu Nanoclick Йейл 61" title="Ламинат Kastamonu Nanoclick Йейл 61">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9301">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-jejl-61/" class="tab-img__item__desc">Ламинат Kastamonu Nanoclick Йейл 61</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">39.6 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-zhansen-62/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9302/small/zhansen-3.jpg.webp" alt="Ламинат Kastamonu Nanoclick Жансен 62" title="Ламинат Kastamonu Nanoclick Жансен 62">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9302">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-zhansen-62/" class="tab-img__item__desc">Ламинат Kastamonu Nanoclick Жансен 62</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">39.6 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-xaggins-63/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9303/small/xaggins-3.jpg.webp" alt="Ламинат Kastamonu Nanoclick Хаггинс 63" title="Ламинат Kastamonu Nanoclick Хаггинс 63">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9303">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-xaggins-63/" class="tab-img__item__desc">Ламинат Kastamonu Nanoclick Хаггинс 63</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">39.6 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-xaber-64/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9304/small/xaber-3.jpg.webp" alt="Ламинат Kastamonu Nanoclick Хабер 64" title="Ламинат Kastamonu Nanoclick Хабер 64">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9304">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-xaber-64/" class="tab-img__item__desc">Ламинат Kastamonu Nanoclick Хабер 64</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">39.6 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-dalen-65/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9305/small/nc65-6.jpg.webp" alt="Ламинат Kastamonu Nanoclick Дален 65" title="Ламинат Kastamonu Nanoclick Дален 65">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9305">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-dalen-65/" class="tab-img__item__desc">Ламинат Kastamonu Nanoclick Дален 65</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">39.6 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-sagan-66/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9306/small/sagan-3.jpg.webp" alt="Ламинат Kastamonu Nanoclick Саган 66" title="Ламинат Kastamonu Nanoclick Саган 66">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9306">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-sagan-66/" class="tab-img__item__desc">Ламинат Kastamonu Nanoclick Саган 66</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">39.6 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-gabbo-67/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9307/small/gabbo-3.jpg.webp" alt="Ламинат Kastamonu Nanoclick Габбо 67" title="Ламинат Kastamonu Nanoclick Габбо 67">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9307">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-gabbo-67/" class="tab-img__item__desc">Ламинат Kastamonu Nanoclick Габбо 67</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">39.6 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-jersen-68/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9308/small/jersen-3.jpg.webp" alt="Ламинат Kastamonu Nanoclick Йерсен 68" title="Ламинат Kastamonu Nanoclick Йерсен 68">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9308">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-nanoclick-jersen-68/" class="tab-img__item__desc">Ламинат Kastamonu Nanoclick Йерсен 68</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">39.6 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-ultramarine-dub-skaj-fp1001/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9310/small/laminat-kastamonu-ultramarine-dub-skaj-fp1001-34-klass-10-mm-4v-faska.jpg.webp" alt="Ламинат Kastamonu Ultramarine Дуб Скай FP1001" title="Ламинат Kastamonu Ultramarine Дуб Скай FP1001">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9310">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-ultramarine-dub-skaj-fp1001/" class="tab-img__item__desc">Ламинат Kastamonu Ultramarine Дуб Скай FP1001</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">49.5 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-ultramarine-dub-sanrajz-fp1002/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9311/small/laminat-kastamonu-ultramarine-dub-sanrajz-fp1002-34-klass-10-mm-4v-faska.jpg.webp" alt="Ламинат Kastamonu Ultramarine Дуб Санрайз FP1002" title="Ламинат Kastamonu Ultramarine Дуб Санрайз FP1002">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9311">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-ultramarine-dub-sanrajz-fp1002/" class="tab-img__item__desc">Ламинат Kastamonu Ultramarine Дуб Санрайз FP1002</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">49.5 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-ultramarine-dub-xart-fp1005/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9312/small/af514-6.jpg.webp" alt="Ламинат Kastamonu Ultramarine Дуб Харт FP1005" title="Ламинат Kastamonu Ultramarine Дуб Харт FP1005">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9312">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-ultramarine-dub-xart-fp1005/" class="tab-img__item__desc">Ламинат Kastamonu Ultramarine Дуб Харт FP1005</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">49.5 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-ultramarine-dub-fantom-fp1004/" class="goods-slide__img">
+        <div class="group-label">
+             
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9313/small/laminat-kastamonu-ultramarine-dub-fantom-fp1004-34-klass-10-mm-4v-faska.jpg.webp" alt="Ламинат Kastamonu Ultramarine Дуб Фантом FP1004" title="Ламинат Kastamonu Ultramarine Дуб Фантом FP1004">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9313">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/laminat/laminat-kastamonu-ultramarine-dub-fantom-fp1004/" class="tab-img__item__desc">Ламинат Kastamonu Ultramarine Дуб Фантом FP1004</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">49.5 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-fastfloor-country-fst-115-dub-purnema/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9314/small/ab029b5c0d359d13db749d1e34cc3c5b.jpg.webp" alt="Виниловый пол FastFloor Country FST-115 Дуб Пурнема" title="Виниловый пол FastFloor Country FST-115 Дуб Пурнема">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9314">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-fastfloor-country-fst-115-dub-purnema/" class="tab-img__item__desc">Виниловый пол FastFloor Country FST-115 Дуб Пурнема</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">65.65 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-fastfloor-country-fst-114-dub-parskij/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         <div class="label-new__goods">new</div> 
+         
+        </div>
+        <img src="/webp/assets/images/products/9315/small/32a18c129d5db68417169d5fbbeef024.jpg.webp" alt="Виниловый пол FastFloor Country FST-114 Дуб Парский" title="Виниловый пол FastFloor Country FST-114 Дуб Парский">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="9315">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="napolnye-pokrytiya/vinilovaya-plitka/vinilovyij-pol-fastfloor-country-fst-114-dub-parskij/" class="tab-img__item__desc">Виниловый пол FastFloor Country FST-114 Дуб Парский</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+             
+            <span class="goods-slide__price-span">65.65 p</span>
+            <span>/ м.кв</span>
+        </div>
+    </form>
+</div>
+
+        </div>
+        <div class="swiper-pagination bullets-custom-popular__goods"></div>
+
+    </div>
+</div>
+
+<!--sale goods-->
+<div class="popular-goods">
+    <div class="container title-section cl-red">распродажа!</div>
+    <div class="popular-goods__slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-vox-vila-korichnevyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/119/small/chast-brown-800x800.jpg.webp" alt="Софит VOX Vilo Коричневый с частичной перфорацией" title="Софит VOX Vilo Коричневый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="119">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-vox-vila-korichnevyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит VOX Vilo Коричневый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/cofit-vox-vilo-korichnevyy-bez-perforacii/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/120/small/sofit-bez-perforatsii-vilo-korichnevyj.1800x1800w.jpg.webp" alt="Cофит VOX Vilo Коричневый без перфорации" title="Cофит VOX Vilo Коричневый без перфорации">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="120">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/cofit-vox-vilo-korichnevyy-bez-perforacii/" class="tab-img__item__desc">Cофит VOX Vilo Коричневый без перфорации</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-vox-vilo-grafitovyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/121/small/chast-grafit-800x800.jpg.webp" alt="Софит VOX Vilo Графитовый с частичной перфорацией" title="Софит VOX Vilo Графитовый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="121">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-vox-vilo-grafitovyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит VOX Vilo Графитовый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-vox-vilo-grafitovyy-bez-perforacii/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/122/small/sofit-bez-perforatsii-vilo-grafitovyj.1800x1800w.jpg.webp" alt="Софит VOX Vilo Графитовый без перфорации" title="Софит VOX Vilo Графитовый без перфорации">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="122">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-vox-vilo-grafitovyy-bez-perforacii/" class="tab-img__item__desc">Софит VOX Vilo Графитовый без перфорации</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-vox-vilo-belyy-bez-perforacii/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">5%</div> 
+        </div>
+        <img src="/webp/assets/images/products/123/small/sofit-bez-perforatsii-vilo-belyj.1800x1800w.jpg.webp" alt="Софит VOX Vilo Белый без перфорации" title="Софит VOX Vilo Белый без перфорации">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="123">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-vox-vilo-belyy-bez-perforacii/" class="tab-img__item__desc">Софит VOX Vilo Белый без перфорации</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">17 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-vox-vilo-belyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">5%</div> 
+        </div>
+        <img src="/webp/assets/images/products/124/small/sofit-vox-belyj.jpg.webp" alt="Софит VOX Vilo Белый с частичной перфорацией" title="Софит VOX Vilo Белый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="124">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-vox-vilo-belyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит VOX Vilo Белый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">17 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-korichnevyy-bez-perforacii/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">10%</div> 
+        </div>
+        <img src="/webp/assets/images/products/145/small/0-0002-sofit-korichnevyj-bez-perforacii-x-15c.jpg.webp" alt="Софит Ю-пласт classic коричневый без перфорации" title="Софит Ю-пласт classic коричневый без перфорации">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="145">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-korichnevyy-bez-perforacii/" class="tab-img__item__desc">Софит Ю-пласт classic коричневый без перфорации</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18.13</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">16.15 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-korichnevyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">10%</div> 
+        </div>
+        <img src="/webp/assets/images/products/146/small/0-0000-sofit-korichnevyj-chastichnaya-perforaciya-x-505.jpg.webp" alt="Софит Ю-пласт classic коричневый с частичной перфорацией" title="Софит Ю-пласт classic коричневый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="146">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-korichnevyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Ю-пласт classic коричневый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18.13</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">16.15 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-korichnevyy-s-polnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">10%</div> 
+        </div>
+        <img src="/webp/assets/images/products/147/small/0-0001-sofit-korichnevyj-polnaya-perforaciya-x-196.jpg.webp" alt="Софит Ю-пласт classic коричневый с полной перфорацией" title="Софит Ю-пласт classic коричневый с полной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="147">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-korichnevyy-s-polnoy-perforaciey/" class="tab-img__item__desc">Софит Ю-пласт classic коричневый с полной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18.13</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">16.15 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-belyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">3%</div> 
+        </div>
+        <img src="/webp/assets/images/products/148/small/0-0005-sofit-belyj-chastichnaya-perforaciya-x-98d.jpg.webp" alt="Софит Ю-пласт classic белый с частичной перфорацией" title="Софит Ю-пласт classic белый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="148">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-belyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Ю-пласт classic белый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">16.5</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">16 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-belyy-s-polnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">3%</div> 
+        </div>
+        <img src="/webp/assets/images/products/149/small/0-0006-sofit-belyj-polnaya-perforaciya-x-b98.jpg.webp" alt="Софит Ю-пласт classic белый с полной перфорацией" title="Софит Ю-пласт classic белый с полной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="149">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-belyy-s-polnoy-perforaciey/" class="tab-img__item__desc">Софит Ю-пласт classic белый с полной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">16.5</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">16 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-belyy-bez-perforacii/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">3%</div> 
+        </div>
+        <img src="/webp/assets/images/products/150/small/0-0007-sofit-belyj-bez-perforacii-x-951.jpg.webp" alt="Софит Ю-пласт classic белый без перфорации" title="Софит Ю-пласт classic белый без перфорации">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="150">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-belyy-bez-perforacii/" class="tab-img__item__desc">Софит Ю-пласт classic белый без перфорации</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">16.5</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">16 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-grafitovyy-bez-perforacii/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">10%</div> 
+        </div>
+        <img src="/webp/assets/images/products/151/small/0-0004-sofit-grafitovyj-bez-perforacii-x-371.jpg.webp" alt="Софит Ю-пласт classic графитовый без перфорации" title="Софит Ю-пласт classic графитовый без перфорации">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="151">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-grafitovyy-bez-perforacii/" class="tab-img__item__desc">Софит Ю-пласт classic графитовый без перфорации</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18.13</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">16.15 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-grafitovyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">10%</div> 
+        </div>
+        <img src="/webp/assets/images/products/152/small/0-0003-sofit-grafitovyj-chastichnaya-perforaciya-x-3cd.jpg.webp" alt="Софит Ю-пласт classic графитовый с частичной перфорацией" title="Софит Ю-пласт classic графитовый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="152">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-yu-plast-classic-grafitovyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Ю-пласт classic графитовый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18.13</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">16.15 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-07-korichnevyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/185/small/chast-brown-800x800.jpg.webp" alt="Софит Айдахо VSV-07 Коричневый с частичной перфорацией" title="Софит Айдахо VSV-07 Коричневый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="185">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-07-korichnevyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Айдахо VSV-07 Коричневый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/cofit-aydaho-vsv-08-korichnevyy-bez-perforacii/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/186/small/sofit-bez-perforatsii-vilo-korichnevyj.1800x1800w.jpg.webp" alt="Cофит Айдахо VSV-08 Коричневый без перфорации" title="Cофит Айдахо VSV-08 Коричневый без перфорации">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="186">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/cofit-aydaho-vsv-08-korichnevyy-bez-perforacii/" class="tab-img__item__desc">Cофит Айдахо VSV-08 Коричневый без перфорации</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-07-grafitovyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             <div class="label">хит</div> 
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/187/small/chast-grafit-800x800.jpg.webp" alt="Софит Айдахо VSV-07 Графитовый с частичной перфорацией" title="Софит Айдахо VSV-07 Графитовый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="187">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-07-grafitovyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Айдахо VSV-07 Графитовый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-08-grafitovyy-bez-perforacii/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/188/small/sofit-bez-perforatsii-vilo-grafitovyj.1800x1800w.jpg.webp" alt="Софит Айдахо VSV-08 Графитовый без перфорации" title="Софит Айдахо VSV-08 Графитовый без перфорации">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="188">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-08-grafitovyy-bez-perforacii/" class="tab-img__item__desc">Софит Айдахо VSV-08 Графитовый без перфорации</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-08-belyy-bez-perforacii/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/189/small/sofit-bez-perforatsii-vilo-belyj.1800x1800w.jpg.webp" alt="Софит Айдахо VSV-08 Белый без перфорации" title="Софит Айдахо VSV-08 Белый без перфорации">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="189">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-08-belyy-bez-perforacii/" class="tab-img__item__desc">Софит Айдахо VSV-08 Белый без перфорации</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+<div class="swiper-slide popular-goods__slide">
+    <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-07-belyy-s-chastichnoy-perforaciey/" class="goods-slide__img">
+        <div class="group-label">
+             
+         
+         <div class="label-sale">13%</div> 
+        </div>
+        <img src="/webp/assets/images/products/190/small/sofit-vox-belyj.jpg.webp" alt="Софит Айдахо VSV-07 Белый с частичной перфорацией" title="Софит Айдахо VSV-07 Белый с частичной перфорацией">
+    </a>
+    <form  method="post" class="ms2_form goods-slide__desc">
+        <input type="hidden" name="id" value="190">
+        <input type="hidden" name="count" value="1">
+        <input type="hidden" name="options" value="[]">
+        
+        <a href="krovlya-sofity/sofity/sofit-aydaho-vsv-07-belyy-s-chastichnoy-perforaciey/" class="tab-img__item__desc">Софит Айдахо VSV-07 Белый с частичной перфорацией</a>
+        <ul><li class="goods-slide__subtitle"><i class="ut2-icon-outline-check-circle"></i>В наличии</li></ul>
+        <div class="goods-slide__price">
+                        <div class="old-price">
+                <strike class="old-price__strike">18</strike>
+                <p class="old-price__strike">p </p>
+            </div> 
+            <span class="goods-slide__price-span">15.5 p</span>
+            <span>/ шт</span>
+        </div>
+    </form>
+</div>
+
+        </div>
+        <div class="swiper-pagination bullets-custom-popular__goods"></div>
+
+    </div>
+</div>
+
+<!--main-description-->
+<div class="container main-description__wrapper">
+    <div class="description-content"><h2 class="content-slider__title">Почему стоит купить стройматериалы в интернет-магазине vmetre.by</h2>
+<ol class="description-content__list">
+<li>Высококлассные специалисты, которые готовы решать Вашу проблему.</li>
+<li>Большой ассортимент товаров, Вам не надо заказывать у трех или четырех фирм, у нас всё есть.</li>
+<li>Оперативная доставка, быстро и качественно.</li>
+<li>Весь товар размещенный на сайте имеет сертификаты качества.</li>
+<li>Лучшие условия для каждого клиента, система скидок.</li>
+<li>У нас есть строители которые помогут Вам сделать ремонт.</li>
+</ol>
+<p class="description-content__subtitle">Мы заботимся о качестве обслуживания и хотим что бы Вы о нас рассказывали!</p></div>
+    <div class="description-img__wrapper">
+        <div class="description-img"></div>
+    </div>
+</div>
+
+<div class="reviews-wrapper-btn get-link" data-goto=".header">
+    <div class="reviews-wrapper-img get-link" data-goto=".header"></div>
+</div>
+<!--footer-->
+<!--<div class="price-warning" style="-->
+<!--width: 300px;-->
+<!--    position: fixed;-->
+<!--    bottom: 75px;-->
+<!--    z-index: 99999;-->
+<!--    left: 50px;-->
+<!--    background: #f1f0f0;-->
+<!--    padding: 15px;-->
+<!--    border-radius: 10px;-->
+<!--    border: 1px solid;">-->
+<!--    <div class="close-warning" style="position: absolute; right: 7px; top: 7px; cursor: pointer">-->
+<!--        <img src="assets/images/menu/Close.svg" alt=""></div>-->
+<!--    <h4 class="">Ведутся работы на сайте по изменению цен с учетом 713 постановления. Актуальные цены и наличие  уточняйте у менеджеров!-->
+<!--    </h4>-->
+<!--</div>-->
+
+<!--<script>-->
+<!--    let priceModal = document.querySelector('.price-warning');-->
+<!--    let closePriceModal = document.querySelector('.close-warning');-->
+
+<!--    closePriceModal.addEventListener('click', () => {-->
+<!--        priceModal.style.display = "none";-->
+<!--    });-->
+<!--</script>-->
+
+<footer>
+    <div class="container">
+        <div class="footer-contacts">
+            <div>
+                <h2 class="footer-contacts__title">О магазине</h2>
+                <div class="footer-menu__contacts">
+                    <div class="footer-menu__contacts-item">
+                        <div class="footer-menu__contacts-item_img location"></div>
+                        <div class="footer-menu__contacts-item_title">г. Минск, ул. Филимонова 55/3</div>
+                    </div>
+
+                    <!--<div class="footer-menu__contacts-item">
+                        <div class="footer-img__group">
+                            <a href="">
+                                <div class="footer-menu__contacts-item_img viber"></div>
+                            </a>
+                            <a href="">
+                                <div class="footer-menu__contacts-item_img telegram"></div>
+                            </a>
+                        </div>
+                        <div class="footer-menu__contacts-item_title">
+                            +375 (29) <span>371-11-74</span>
+                        </div>
+                    </div>-->
+                    <div class="footer-menu__contacts-item">
+                        <div class="footer-img__group">
+                            <a href="https://msngr.link/vi/375291310990">
+                                <div class="footer-menu__contacts-item_img viber"></div>
+                            </a>
+                            <a href="https://msngr.link/tg/375291310990">
+                                <div class="footer-menu__contacts-item_img telegram"></div>
+                            </a>
+                        </div>
+                        <a href="tel:+375291310990" class="footer-menu__contacts-item_title">
+                            +375 (29) <span>131-09-90</span>
+                        </a>
+                    </div>
+                    
+                    <div class="footer-menu__contacts-item">
+                        <div class="footer-menu__contacts-item_img time"></div>
+                        <div class="footer-menu__contacts-item_title">пн-пт 10.00 - 19.00, сб-вс 10.00 - 18.00</div>
+                    </div>
+                    <div class="footer-menu__contacts-item">
+                        <a href="mailto:zakaz@vmetre.by">
+                            <div class="footer-menu__contacts-item_img mail"></div>
+                        </a>
+                        <a href="mailto:zakaz@vmetre.by">
+                            <div class="footer-menu__contacts-item_title">zakaz@vmetre.by</div>
+                        </a>
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/vmetre.by/" target="_blank">
+                    <div class="insta-logo">
+                    </div>
+                </a>
+            </div>
+            <div class="group-info__footer">
+                <div>
+                    <h2 class="footer-contacts__title">Клиентам</h2>
+                    <ul class="footer-menu__info"><li class="first"><a href="o-magazine/" class="footer-menu__info-item" >О магазине</a></li><li class=""><a href="kontakty/" class="footer-menu__info-item" >Контакты</a></li><li class=""><a href="dostavka-i-oplata/" class="footer-menu__info-item" >Доставка и оплата</a></li><li class=""><a href="uslugi/" class="footer-menu__info-item" >Услуги</a></li><li class="last"><a href="vozvrat/" class="footer-menu__info-item" >Возврат</a></li></ul>
+                </div>
+                <div>
+                    <h2 class="footer-contacts__title">Каталог</h2>
+                    <ul class="footer-menu__info"><li class="first"><a href="napolnye-pokrytiya/laminat/" class="footer-menu__info-item" >Ламинат</a></li><li class=""><a href="napolnye-pokrytiya/terrasnaya-doska/" class="footer-menu__info-item" >Террасная доска (декинг)</a></li><li class=""><a href="fasadnye-materialy/sayding/" class="footer-menu__info-item" >Сайдинг</a></li><li class=""><a href="fasadnye-materialy/fasadnye-paneli/" class="footer-menu__info-item" >Фасадные панели</a></li><li class="last"><a href="vodostochnye-sistemy/" class="footer-menu__info-item" >Водосточные системы</a></li></ul>
+                </div>
+            </div>
+            <div>
+                <h2 class="footer-contacts__title">Способы оплаты</h2>
+                <div class="payment-img">
+                    <div class="payment-img__item item-card1"></div>
+                    <div class="payment-img__item item-card2"></div>
+                    <div class="payment-img__item item-card3"></div>
+                    <div class="payment-img__item item-card4"></div>
+                    <div class="payment-img__item item-card5"></div>
+                    <div class="payment-img__item item-card6"></div>
+                    <div class="payment-img__item item-card7"></div>
+                    <div class="payment-img__item item-card8"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__user-text">
+        <div class="container footer__user-text_wrapper">
+            <h4 class="footer__user-text_title">© Интернет-магазин строительных материалов vmetre.by, 2022
+                ИП Изотов Дмитрий Вадимович, УНП 193557396
+                Свидетельство о регистрации 193557396 от 09.06.2021 Минским горисполкомом
+                Юридический адрес: г. Минск, пр-т Рокоссовского, 76-212
+                </h4>
+                <!--<h4 class="footer__user-text_title">Ведутся работы на сайте по изменению цен с учетом 713 постановления. Актуальные цены и наличие  уточняйте у менеджеров!</h4>-->
+            <!--<button class="footer-btn"></button>-->
+            <div class="footer_map">
+                <div style="position: relative; overflow: hidden;"><a style="color: #eee; font-size: 12px; position: absolute; top: 0px;" href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&amp;utm_source=maps">Минск</a><a style="color: #eee; font-size: 12px; position: absolute; top: 14px;" href="https://yandex.by/maps/geo/53177019/?from=mapframe&amp;ll=27.727503%2C53.882753&amp;source=mapframe&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=10">Минск</a><iframe style="position: relative;border: 1px solid #ffe600;" src="https://yandex.by/map-widget/v1/-/CCUJNCgfsC" frameborder="1" width="560" height="200"></iframe></div>
+                <style>
+                    @media (max-width: 675px) {
+                        .footer_map, .footer_map iframe {
+                            width: 100%;
+                        }
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+   <!-- <div class="footer-title__wrapper">
+        <h4 class="footer-title"></h4>
+    </div>-->
+</footer>
+<div class="hidden" id="content_call" title="Заказать звонок">
+    <div id="call_request">
+		<form method="post" class="ajax_form" id="zvon">
+
+    <div class="ty-control-group">
+        <label class="ty-control-group__title" for="name_b">Ваше имя</label>
+        <input id="name_b" size="50" class="ty-input-text-full" type="text" name="name" value="" />
+    </div>
+
+    <div class="ty-control-group">
+        <label for="phone_b" class="ty-control-group__title cm-mask-phone-label cm-required">Телефон</label>
+        <input id="phone_b" class="ty-input-text-full cm-mask-phone ty-inputmask-bdi" size="50" type="text" name="tel" value="" data-enable-custom-mask="true" />
+    </div>
+
+    <div class="ty-control-group">
+        <label for="call_data_call_request_1377_convenient_time_from" class="ty-control-group__title">Удобное время</label>
+        <bdi>
+            <input id="call_data_call_request_1377_convenient_time_from" class="ty-input-text cm-cr-mask-time" size="6" type="text" name="time_from" value="" placeholder="09:00" /> -
+            <input id="call_data_call_request_1377_convenient_time_to" class="ty-input-text cm-cr-mask-time" size="6" type="text" name="time_to" value="" placeholder="20:00" />
+        </bdi>
+    </div>
+
+    <div class="buttons-container">
+        <button  class="ty-btn__primary ty-btn__big ty-btn ty-btn" type="submit"><span><span>Отправить</span></span></button>
+    </div>
+
+    
+    
+
+	<input type="hidden" name="af_action" value="6d50585c1b8d99af03ac3e73066991ef" />
+</form>
+    </div>
+</div><div class="hidden" id="one_click" title="Купить в один клик">
+    <div id="content_buy_now_with_one_click" class="hidden ui-dialog-content ui-widget-content">
+        <div class="object-container " style="height: 523.375px;">
+		<form method="post" class="ajax_form" id="zakaz">
+    <div class="ty-cr-product-info-container">
+        <div class="ty-cr-product-info-image">
+            <img class="ty-pict cm-image" src="#" alt="Главная - фото 5186" title="Главная" style="width: 150px;opacity: 1;">
+        </div>
+        <div class="ty-cr-product-info-header">
+            <h3 class="ty-product-block-title"><bdi>Главная</bdi></h3>
+        </div>
+    </div>
+
+    <div class="ty-control-group">
+        <label class="ty-control-group__title" for="call_data_buy_now_with_one_click_5186_name">Ваше имя</label>
+        <input id="call_data_buy_now_with_one_click_5186_name" size="50" class="ty-input-text-full" type="text" name="name" value="">
+    </div>
+
+    <div class="ty-control-group">
+        <label for="call_data_buy_now_with_one_click_5186_phone" class="ty-control-group__title cm-mask-phone-label">Телефон</label>
+        <input id="call_data_buy_now_with_one_click_5186_phone" class="ty-input-text-full cm-mask-phone ty-inputmask-bdi js-mask-phone-inited" size="50" type="text" name="tel" value="" data-enable-custom-mask="true" inputmode="numeric">
+    </div>
+
+
+    <div class="ty-cr-or">— или —</div>
+
+    <div class="ty-control-group">
+        <label for="call_data_buy_now_with_one_click_5186_email" class="ty-control-group__title cm-email">E-mail</label>
+        <input id="call_data_buy_now_with_one_click_5186_email" class="ty-input-text-full" size="50" type="text" name="email" value="">
+    </div>
+    <input type="hidden" name="ValToSend" value="Главная">
+
+    <div class="cr-popup-error-box">
+        <div class="hidden cm-cr-error-box help-inline">
+            <p>Пожалуйста, введите телефон или email, чтобы наш сотрудник мог связаться с вами</p>
+        </div>
+    </div>
+
+    <div class="buttons-container buttons-container-picker" style="position: absolute; bottom: 0px;">
+        <button class="ty-btn__primary ty-btn__big cm-form-dialog-closer ty-btn ty-btn" type="submit" name="dispatch[call_requests.request]"><span><span>Отправить</span></span></button>
+    </div>
+    
+    
+
+	<input type="hidden" name="af_action" value="700ec80d7e65a24b82120de5bfcffd8c" />
+</form>
+		</div>
+    </div>
+</div><div id="modal_flash" class="ajax_form hidden cm-dialog-auto-size" title="Персональная скидка" style="max-width: 395px;">
+    <div class="hidden ui-dialog-content ui-widget-content">
+        <div class="object-container">
+            <form method="post" class=" ajax_form" id="flash">
+                <div class="ty-control-group">
+                    <b>
+                        Оставьте ваше контактные данные и мы вас проконсультируем по продукции!
+                        <!--Получите <span style="color: #FFA800;">персональную скидку 5%</span> на все товары!-->
+                    </b>
+                </div>
+                <div class="ty-control-group">
+                    <label class="ty-control-group__title" for="name_a">Ваше имя</label>
+                    <input id="name_a" size="50" class="ty-input-text-full" type="text" name="name" value="" />
+                </div>
+            
+                <div class="ty-control-group">
+                    <label for="phone_a" class="ty-control-group__title cm-mask-phone-label cm-required">Телефон</label>
+                    <input id="phone_a" class="ty-input-text-full cm-mask-phone ty-inputmask-bdi" size="50" type="text" name="tel" value="" data-enable-custom-mask="true" />
+                </div>
+            
+                <div class="buttons-container">
+                    <button  class="ty-btn__primary ty-btn__big ty-btn ty-btn" type="submit"><span><span>Отправить</span></span></button>
+                </div>
+            
+                
+                
+            
+	<input type="hidden" name="af_action" value="fc6246de525fbb5e5f6ca1dc0f144fbf" />
+</form>
+        </div>
+    </div>
+</div>
+
+<script> 
+    try {
+        setTimeout(function() {
+            if (sessionStorage.getItem('firstVisit') !== "1") {
+                const modal = document.querySelector("#modal_flash");
+                
+                const _btn = document.createElement('button');
+                _btn.className = "cm-dialog-opener cm-dialog-auto-size";
+                _btn.dataset.caTargetId ="modal_flash";
+                _btn.cssText = "position: absolute; left: -9999px; opacity: 0;pointer-events: none;"
+                document.querySelector('body').append(_btn);
+                
+                _btn.click();
+
+                sessionStorage.setItem('firstVisit', '1'); 
+                
+                // инпуты создающий растояние
+                const _org = modal.querySelectorAll('._org');
+                
+                if (_org.length) {
+                    for (const item of _org) {
+                        item.style.position = "absolute";
+                    }
+                }
+            } 
+        }, 158000)
+    } catch (e) {
+        console.error(e);
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script>
+    //addTagPageSpeed("script", {src:"https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"});
+    //addTagPageSpeed("script", {src:"https://unpkg.com/aos@2.3.1/dist/aos.js"});
+    //addTagPageSpeed("script", {src:"https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"});
+    addScriptPageSpeed("https://vmetre.by/assets/templates/new/js/aos.js", false);
+    addScriptPageSpeed("https://vmetre.by/assets/templates/new/js/script.js", false);
+    addScriptPageSpeed("https://vmetre.by/assets/templates/new/js/index.js", false);
+    addScriptPageSpeed("https://vmetre.by/assets/templates/new/js/popular-goods.js", false);
+    addScriptPageSpeed("https://vmetre.by/assets/templates/new/js/main.js", false);
+</script>
+<!--<script src="assets/templates/new/js/aos.js"></script>-->
+<!--<script src="assets/templates/new/js/script.js"></script>-->
+<!--<script src="assets/templates/new/js/index.js"></script>-->
+<!--<script src="assets/templates/new/js/popular-goods.js"></script>-->
+<!--<script src="assets/templates/new/js/main.js"></script>-->
+<noscript><div><img src="//mc.yandex.ru/watch/" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!--<script src="assets/templates/vmetre/js/script.js"></script>-->
+<script>
+    addScriptPageSpeed("https://vmetre.by/assets/templates/vmetre/js/script.js", false);
+</script>
+<script>
+(function(_, $) {
+
+        $(document).ready(function(){
+            $.runCart('C');
+        });
+
+    }(Tygh, Tygh.$));
+</script>
+<script>(function(_, $) {$.extend(_, {abt__ut2: {settings: {"general":{"lazy_load":"Y","brand_feature_id":"561","push_history_on_popups":{"desktop":"N","tablet":"N","mobile":"Y"},"blog_page_id":"","enable_fixed_header_panel":"Y","price_format":"default","check_clone_theme":"Y"},"category":{"use_swipe_to_close_filters":{"desktop":"N","tablet":"N","mobile":"N"},"show_subcategories":"Y","description_position":"bottom"},"features":{"description_position":"bottom"},"product_list":{"show_gallery":"N","decolorate_out_of_stock_products":"N","products_multicolumns":{"grid_item_height":{"desktop":"","tablet":"","mobile":""},"image_width":{"desktop":"270","tablet":"200","mobile":"140"},"image_height":{"desktop":"270","tablet":"200","mobile":"140"},"show_sku":{"desktop":"N","tablet":"N","mobile":"N"},"show_amount":{"desktop":"Y","tablet":"Y","mobile":"Y"},"show_qty":{"desktop":"N","tablet":"N","mobile":"N"},"show_buttons":{"desktop":"Y","tablet":"Y","mobile":"Y"},"show_buttons_on_hover":{"desktop":"N","tablet":"N","mobile":"N"},"grid_item_bottom_content":{"desktop":"features_and_variations","tablet":"none","mobile":"none"},"show_brand_logo":{"desktop":"N","tablet":"N","mobile":"N"},"show_you_save":{"desktop":"N","tablet":"N","mobile":"N"}},"products_without_options":{"show_sku":{"desktop":"Y","tablet":"Y","mobile":"Y"},"show_amount":{"desktop":"Y","tablet":"Y","mobile":"Y"},"show_qty":{"desktop":"Y","tablet":"Y","mobile":"Y"},"grid_item_bottom_content":{"desktop":"features_and_variations","tablet":"features_and_variations","mobile":"features_and_variations"},"show_options":{"desktop":"Y","tablet":"Y","mobile":"Y"},"show_brand_logo":{"desktop":"Y","tablet":"Y","mobile":"Y"}},"short_list":{"show_sku":{"desktop":"Y","tablet":"Y","mobile":"N"},"show_amount":{"desktop":"Y","tablet":"Y","mobile":"Y"},"show_qty":{"desktop":"Y","tablet":"Y","mobile":"Y"},"show_button":{"desktop":"Y","tablet":"Y","mobile":"Y"},"show_button_quick_view":{"desktop":"N","tablet":"N","mobile":"N"},"show_button_wishlist":{"desktop":"Y","tablet":"Y","mobile":"N"},"show_button_compare":{"desktop":"Y","tablet":"N","mobile":"N"}},"product_variations":{"limit":"10","display_as_links":"N"},"show_fixed_filters_button":{"desktop":"N","tablet":"N","mobile":"Y"},"max_features":{"desktop":"7","tablet":"7","mobile":"7"},"price_display_format":"col","show_rating":"N","default_products_view":{"desktop":"products_without_options","tablet":"products_without_options","mobile":"products_without_options"}},"products":{"view":{"show_qty":{"desktop":"Y","tablet":"Y","mobile":"Y"},"show_sku":{"desktop":"Y","tablet":"Y","mobile":"Y"},"show_features":{"desktop":"Y","tablet":"Y","mobile":"Y"},"show_short_description":{"desktop":"N","tablet":"N","mobile":"N"},"show_sticky_add_to_cart":{"desktop":"N","tablet":"N","mobile":"Y"},"show_brand_logo":{"desktop":"Y","tablet":"Y","mobile":"N"},"brand_link_behavior":"to_category_with_filter"},"custom_block_id":"","addon_buy_together":{"view":"as_block_above_tabs"},"addon_required_products":{"list_type":{"desktop":"grid_list","tablet":"grid_list","mobile":"grid_list"},"item_quantity":{"desktop":"4","tablet":2,"mobile":2}},"addon_social_buttons":{"view":{"desktop":"Y","tablet":"N","mobile":"N"}}},"load_more":{"product_list":"Y","blog":"Y","mode":"on_button_click","before_end":"300px"},"addons":{"wishlist_products":{"item_quantity":{"desktop":"4","tablet":2,"mobile":2}},"call_requests":{"item_button":"Y"},"discussion":{"highlight_administrator":"N","verified_buyer":"Y"}}},controller : 'index',mode : 'index',device : 'desktop',temporary: { },}});}(Tygh, Tygh.$));</script>
+
+
+<script src="//code-ya.jivosite.com/widget/XyXeyCHWru" async=""></script>
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "LocalBusiness",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "Беларусь",
+"addressLocality": "Минск",
+"addressRegion": "BY",
+"email": "zakaz@vmetre.by"
+},
+"description": "Продажа строительных и отделочных материалов",
+"name": "Интернет-магазин vmetre.by",
+"telephone": "+375(29)371-11-74",
+"logo": "https://vmetre.by/images/logos/9/%D0%9B%D0%9E%D0%93%D0%9E-%D0%92%D0%95%D0%9A%D0%A2%D0%9E%D0%A0-[%D0%92%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD]vvvvv.png",
+"image": "https://vmetre.by/images/logos/9/%D0%9B%D0%9E%D0%93%D0%9E-%D0%92%D0%95%D0%9A%D0%A2%D0%9E%D0%A0-[%D0%92%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD]vvvvv.png",
+"url": "https://vmetre.by/",
+"openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 09:00-21:00"
+}
+</script>
+
+
+<script>
+       	$(document).on('af_complete', function(event, response) {
+            var form = response.form;
+            if (form.attr('id') == 'zakaz' && response.success) {
+               window.location.href = "spasibo-za-otpravku-soobshheniya/"
+            }
+        });
+</script>
+<script>
+       	$(document).on('af_complete', function(event, response) {
+            var form = response.form;
+            if (form.attr('id') == 'zvon' && response.success) {
+               window.location.href = "spasibo-za-otpravku-soobshheniya/"
+            }
+        });
+</script>
+<script>
+       	$(document).on('af_complete', function(event, response) {
+            var form = response.form;
+            if (form.attr('id') == 'flash' && response.success) {
+               window.location.href = "spasibo-za-otpravku-soobshheniya/"
+            }
+        });
+</script>
+<script>
+   function setParamForm(header,btntext) {
+      $("#zakaz input[name=ValToSend]").val(header);
+      $("#zakaz .ty-cr-product-info-image").html(btntext);
+   }
+</script>
+<script>
+$(function(){
+    $('.ajax_form').append('<input type="text" name="org" value="" class="_org" style="visibility:hidden; height: 0; width: 0; padding: 0; border:none;"/>')
+})
+</script>
+<script src="/assets/components/msfavorites/js/default.min.js?v=f301bf14"></script>
+<script src="/assets/components/minishop2/js/web/default.js?v=57fe2bbf03"></script>
+<script src="/assets/components/minishop2/js/web/lib/jquery.jgrowl.min.js"></script>
+<script src="/assets/components/minishop2/js/web/message_settings.js"></script>
+	<script type="text/javascript">
+		if(typeof jQuery == "undefined") {
+			document.write("<script src=\"/assets/components/comparison/js/lib/jquery.min.js\" type=\"text/javascript\"><\/script>");
+		}
+	</script>
+
+<script src="/assets/components/comparison/js/default.js"></script>
+<script src="/assets/components/msearch2/js/web/default.js"></script>
+
+		<script type="text/javascript">
+			if ($("form.msearch2").length) {
+				mSearch2.Form.initialize("form.msearch2");
+			}
+		</script>
+<script src="/assets/components/ajaxform/js/default.js"></script>
+<script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":1});</script>
+</body>
+</html>
