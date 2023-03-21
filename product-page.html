@@ -406,13 +406,18 @@
                     </div>
                   </div>
 
+                  <style>
+                    .cm-preview-wrapper .cm-image-previewer:nth-child(n + 2) {
+                      display: none;
+                    }
+                  </style>
 
                   <div class="ut2-pb__wrapper clearfix calc-prod">
                     <div class="ut2-pb__img-wrapper ty-product-block__img-wrapper">
                       <div class="ut2-pb__img cm-reload-4684" data-ca-previewer="true" id="product_images_4684_update">
                         <div class="ab_vg-images-wrapper clearfix" data-ca-previewer="true">
                           <div id="product_images_" class="ty-product-img cm-preview-wrapper ab-vertical"
-                            style="width: -webkit-calc(100% - 100px);width: calc(100% - 100px); max-height: 470px;">
+                            style="width:-webkit-calc(100% - 100px);width:calc(100% - 100px);max-height:470px;">
                             <a id="det_img_link_26522" data-ca-image-id="preview[product_images_26522]"
                               class="cm-image-previewer cm-previewer ty-previewer" data-ca-image-width="1024"
                               data-ca-image-height="706" href="assets/images/products/8299/93.jpg"
@@ -545,7 +550,7 @@
                                             <bdi><span class="ty-price-num msoptionsprice-cost msoptionsprice-8299"
                                                 id="price_m">16.9</span>&nbsp;<span class="ty-price-num">p</span></bdi>
                                           </span>
-                                          <span>м.кв</span>
+                                          <span>/ м.кв</span>
                                         </span>
                                       </div>
 
@@ -699,10 +704,10 @@
                           </div>
                           <div id="ab__mb_id_12_1470_1" class="ab__mb_item-description">
                             <div class="ty-wysiwyg-content ab-mb-style-presets">
-                              <p>Ламинат до 30 руб за м.кв доставка по Минску от 10 м.кв бесплатно, от 20 м.кв
+                              <p>Ламинат до 30 руб за / м.кв доставка по Минску от 10 / м.кв бесплатно, от 20 / м.кв
                                 по РБ бесплатно</p>
-                              <p>Ламинат от 30 руб за м.кв доставка по Минску от 10 м.кв бесплатно, по РБ от 15
-                                м.кв бесплатно</p>
+                              <p>Ламинат от 30 руб за / м.кв доставка по Минску от 10 / м.кв бесплатно, по РБ от 15
+                                / м.кв бесплатно</p>
                               <p>Сроки доставок: По Минску - день в день либо на следующий день. По РБ - 1-3
                                 дня.</p>
                               <p>Стоимость доставки акционных товаров рассчитывается индивидуально!</p>
@@ -720,7 +725,7 @@
                           </div>
                           <div id="ab__mb_id_12_1470_3" class="ab__mb_item-description" style="display: none;">
                             <div class="ty-wysiwyg-content ab-mb-style-presets">
-                              <p>За каждых 10 м.кв вы получаете 1%, Пример: за 30 м.кв=3% скидки, бывают
+                              <p>За каждых 10 / м.кв вы получаете 1%, Пример: за 30 / м.кв=3% скидки, бывают
                                 исключения и в большую сторону, звоните!</p>
                               <p>на акционные предложение не действует.</p>
                             </div>
@@ -768,19 +773,19 @@
                                   </tr>
                                   <tr>
                                     <td>Укладка ламината</td>
-                                    <td>от 5р за м.кв</td>
+                                    <td>от 5р за / м.кв</td>
                                   </tr>
                                   <tr>
                                     <td>Укладка винилового пола (замковой метод)</td>
-                                    <td>от 7р за м.кв</td>
+                                    <td>от 7р за / м.кв</td>
                                   </tr>
                                   <tr>
                                     <td>Укладка винилового пола (клеевой метод)</td>
-                                    <td>от 6р за м.кв</td>
+                                    <td>от 6р за / м.кв</td>
                                   </tr>
                                   <tr>
                                     <td>Укладка линолеума или ковролина</td>
-                                    <td>от 4р за м.кв</td>
+                                    <td>от 4р за / м.кв</td>
                                   </tr>
                                   <tr>
                                     <td>Монтаж плинтуса ПВХ</td>
@@ -879,8 +884,6 @@
                     </ul>
                   </div>
                   <div class="cm-tabs-content ty-tabs__content clearfix" id="tabs_content" data-section="1">
-                    <div id="content_description" class="ty-wysiwyg-content content-description"></div>
-
                     <div id="content_features" class="ty-wysiwyg-content content-features" data-section="1">
                       <table>
                         <tr>
@@ -969,7 +972,7 @@
                               <div class="row_form_a">
                                 <div class="form-group">
                                   <textarea class="form-control required" name="cf_message" placeholder="Сообщение *"
-                                    style="min-height: 155px;"></textarea>
+                                    style="min-height: 185px;"></textarea>
                                 </div>
                                 <input type="hidden" name="cf_antispam" value="">
                               </div>
@@ -988,13 +991,13 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="push20"></div>
+                            <!-- <div class="push20"></div>
                             <div class="agreement form-group">
-                              <!--<input type="checkbox" name="cf_agreement" id="agreement5" class="required" value="">-->
-                              <!--<label for="agreement5">-->
-                              <!--    Даю согласие на обработку персональных данных в соответствии с <a href="vodostochnye-sistemy/">политикой конфиденциальности</a> *-->
-                              <!--</label>-->
-                            </div>
+                              <input type="checkbox" name="cf_agreement" id="agreement5" class="required" value="">
+                              <label for="agreement5">
+                                  Даю согласие на обработку персональных данных в соответствии с <a href="vodostochnye-sistemy/">политикой конфиденциальности</a> *
+                              </label>
+                            </div> -->
                             <div class="form-item">
                               <div class="g-recaptcha" data-sitekey="6LdPmr4kAAAAAOrtpVryB9rlwn62gGJHSOw7DHWU"></div>
                               <script type="text/javascript"
@@ -1002,89 +1005,16 @@
 
                               <span class="error_g-recaptcha-response error"></span>
                             </div>
-                            <input type="submit" class="button invert btn" name="cf_btn" value="Отправить">
+                            <input type="submit" class="ty-btn__primary ty-btn" name="cf_btn" value="Отправить">
 
                             <input type="hidden" name="af_action" value="fb3de0c2a7e83602bbd93cd7c3615d8d" />
                           </form>
                         </div>
                       </div>
-                      <style>
-                        .tovar_section_form {
-                          margin-top: 20px;
-                        }
-
-                        #vopros_form>.row_form {
-                          display: flex;
-                          gap: 30px;
-                          flex-wrap: wrap;
-                        }
-
-                        #vopros_form input[type="text"],
-                        #vopros_form input[type="password"],
-                        #vopros_form input[type="email"],
-                        #vopros_form input[type="tel"],
-                        #vopros_form select,
-                        #vopros_form textarea {
-                          background: #f7f7f7;
-                          border: 1px solid #eeeeee;
-                          border-radius: 2px;
-                          box-shadow: none;
-                          color: #383838;
-                          height: auto;
-                          font-size: 13px;
-                          padding: 8px 13px 7px;
-                          width: 100%;
-                          resize: none;
-                        }
-
-                        #vopros_form textarea {
-                          width: 420px;
-                        }
-
-                        .row_form_b {
-                          display: flex;
-                          flex-direction: column;
-                          gap: 25px;
-                          width: 280px;
-                        }
-
-                        #vopros_form .agreement {
-                          max-width: 540px;
-                          margin: 30px 0;
-                        }
-
-                        #vopros_form .button {
-                          border: none;
-                          background: black;
-                          color: white;
-                          padding: 10px 20px;
-                          margin-top: 30px;
-                        }
-
-                        @media (max-width: 920px) {
-                          .tovar_section_form {
-                            gap: 30px;
-                          }
-
-                          #vopros_form textarea {
-                            width: 420px;
-                          }
-                        }
-
-                        @media (max-width: 540px) {
-
-                          .row_form_a,
-                          .row_form_b,
-                          #vopros_form textarea {
-                            width: 100%;
-                          }
-                        }
-                      </style>
                     </div>
 
                     <div class="ty-wysiwyg-content content-features no_active reviews" data-section="3">
                       <div class="comments">
-
 
                         <h3 class="title">Отзывы (<span id="comment-total"></span>)</h3>
 
@@ -1132,10 +1062,10 @@
                           <div id="tpanel-new"></div>
                         </div>
                       </div>
-                      <h4 id="comment-new-link">
+                      <!-- <h4 id="comment-new-link">
                         <a href="#" class="btn btn-default">Написать отзыв
                         </a>
-                      </h4>
+                      </h4> -->
 
                       <div id="comment-form-placeholder">
                         <form id="comment-form" action="" method="post" class="well">
@@ -1146,26 +1076,25 @@
                           <input type="hidden" name="form_key" value="fa5ccae796395e411ab3c7dc6350debe">
 
                           <div class="form-group">
-                            <label for="comment-name">Автор</label>
-                            <input type="text" name="name" value="" id="comment-name" class="form-control" />
+                            <label for="comment-name" hidden>Ваше имя *</label>
+                            <input type="text" name="name" value="" id="comment-name" class="form-control"
+                              placeholder="Ваше имя *" />
                             <span class="error"></span>
                           </div>
 
                           <div class="form-group">
-                            <label for="comment-email">Email</label>
-                            <input type="text" name="email" value="" id="comment-email" class="form-control" />
+                            <label for="comment-email" hidden>Email *</label>
+                            <input type="text" name="email" value="" id="comment-email" class="form-control"
+                              placeholder="Email *" />
                             <span class="error"></span>
                           </div>
 
                           <div class="form-group">
-                            <label for="comment-editor"></label>
+                            <label for="comment-editor" hidden></label>
                             <textarea name="text" id="comment-editor" cols="30" rows="10"
                               class="form-control"></textarea>
                             <span class="error" id="text-error"></span>
                           </div>
-
-
-
 
                           <div class="form-group">
                             <label for="comment-captcha" id="comment-captcha">Введите сумму 8 + 8</label>
@@ -1173,54 +1102,16 @@
                             <span class="error"></span>
                           </div>
 
-
                           <div class="form-actions">
-                            <input type="button" class="btn btn-default preview" value="Предпросмотр"
-                              title="Ctrl + Enter" />
-                            <input type="submit" class="btn btn-primary submit" value="Написать"
-                              title="Ctrl + Shift + Enter" />
+                            <button type="submit" class="btn btn-primary submit ty-btn ty-btn__primary"
+                              title="Ctrl + Shift + Enter">Написать</button>
+                            <button type="button" class="btn btn-default preview ty-btn ty-cr-product-button"
+                              title="Ctrl + Enter">Предпросмотр</button>
                             <span class="time"></span>
                           </div>
                         </form>
                       </div>
                     </div>
-                    <style>
-                      .reviews {
-                        display: flex;
-                        flex-direction: column;
-                      }
-
-                      .reviews #comment-form {
-                        display: flex;
-                        flex-wrap: wrap;
-                      }
-
-                      .reviews #comment-form .form-group:nth-child(6),
-                      .reviews #comment-form .form-group:nth-child(7) {
-                        width: 175px;
-                        margin-right: 30px;
-                      }
-
-                      .reviews #comment-form .form-group:nth-child(8),
-                      .reviews #comment-form .form-group:nth-child(9),
-                      .reviews #comment-form .form-actions,
-                      .reviews #comment-form #comment-editor {
-                        width: 100%;
-                      }
-
-                      .reviews #comment-form .form-group:nth-child(9) {
-                        display: flex;
-                        flex-direction: column;
-                        width: 225px;
-                      }
-
-                      .reviews #comment-form .btn {
-                        border: none;
-                        background-color: black;
-                        color: white;
-                        padding: 8px 16px;
-                      }
-                    </style>
 
                     <div class="ty-wysiwyg-content content-features no_active reviews" data-section="4">
 
@@ -1254,6 +1145,16 @@
               </div>
             </div>
           </div>
+
+          <style>
+            .ut2-scroller-advanced > .ut2-gl__item {
+              width: 25%;
+              float: left;
+            }
+            .ut2-scroller-advanced > .ut2-gl__item:nth-child(n+5) {
+              display: none;
+            }
+          </style>
           <div class="container-fluid-row">
             <div class="row-fluid ">
               <div class="span16  ut2-top-bottom">
@@ -1272,7 +1173,7 @@
                       <div>
                         <div class="hidden-phone1 ">
                           <div id="scroll_list_182_626fc5d643905"
-                            class="owl-carousel ty-scroller-list grid-list no-buttons ut2-scroller-advanced">
+                            class="ty-scroller-list grid-list no-buttons ut2-scroller-advanced">
                             <div class="ut2-gl__item">
                               <form method="post"
                                 class="ms2_form cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
@@ -1283,7 +1184,14 @@
                                   <div class="ut2-gl__image" style="height: 270px">
                                     <div class="ab-stickers-container ab-stickers-container__TL column-filling">
                                       <div class="ab-sticker-full_size small-image-size-32 full-image-size-48">
-
+                                        <div class="ty-product-list__badge-list">
+                                          <div class="ty-product-list__badge ty-product-list__badge--hit badge">хит
+                                          </div>
+                                          <div class="ty-product-list__badge ty-product-list__badge--new badge">new
+                                          </div>
+                                          <div class="ty-product-list__badge ty-product-list__badge--promotion badge">%
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                     <a
@@ -1294,14 +1202,6 @@
                                         title="Подложка под ламинат и паркетную доску Solid 3мм листовая" width="270"
                                         height="270" />
                                     </a>
-                                    <div class="ut2-gl__buttons">
-                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
-                                        data-data-list="default" data-data-type="resource" data-data-key="2684"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
-                                    </div>
                                   </div>
                                   <div class="ut2-gl__name">
                                     <a href="napolnye-pokrytiya/podlozhka/podlozhka-pod-laminat-i-parketnuyu-dosku-solid-3mm-listovaya/"
@@ -1312,19 +1212,28 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__price pr-col" style="min-height: 37px;">
                                     <div>
-
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">2</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
+                                    </div>
+                                    <div class="ut2-gl__buttons">
+                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
+                                        data-data-list="default" data-data-type="resource" data-data-key="2684"
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                 </div>
@@ -1351,14 +1260,6 @@
                                         title="Подложка под ламинат и паркетную доску Steico UNDERFLOOR 3мм" width="270"
                                         height="270" />
                                     </a>
-                                    <div class="ut2-gl__buttons">
-                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
-                                        data-data-list="default" data-data-type="resource" data-data-key="2688"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
-                                    </div>
                                   </div>
                                   <div class="ut2-gl__name">
                                     <a href="napolnye-pokrytiya/podlozhka/podlozhka-pod-laminat-i-parketnuyu-dosku-steico-underfloor-3mm/"
@@ -1369,19 +1270,28 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__price pr-col" style="min-height: 37px;">
                                     <div>
-
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">6.9</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
+                                    </div>
+                                    <div class="ut2-gl__buttons">
+                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
+                                        data-data-list="default" data-data-type="resource" data-data-key="2684"
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                 </div>
@@ -1426,7 +1336,14 @@
                                   <div class="ut2-gl__image" style="height: 270px">
                                     <div class="ab-stickers-container ab-stickers-container__TL column-filling">
                                       <div class="ab-sticker-full_size small-image-size-32 full-image-size-48">
-
+                                        <div class="ty-product-list__badge-list">
+                                          <div class="ty-product-list__badge ty-product-list__badge--hit badge">хит
+                                          </div>
+                                          <div class="ty-product-list__badge ty-product-list__badge--new badge">new
+                                          </div>
+                                          <div class="ty-product-list__badge ty-product-list__badge--promotion badge">%
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                     <a
@@ -1436,14 +1353,6 @@
                                         title="Ламинат EGGER Large Дуб Шерман коньяк коричневый EPL184" width="270"
                                         height="270" />
                                     </a>
-                                    <div class="ut2-gl__buttons">
-                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
-                                        data-data-list="default" data-data-type="resource" data-data-key="3820"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
-                                    </div>
                                   </div>
                                   <div class="ut2-gl__name">
                                     <a href="napolnye-pokrytiya/laminat/laminat-egger-large-dub-sherman-konyak-korichnevyy-epl184/"
@@ -1454,19 +1363,28 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__price pr-col" style="min-height: 37px;">
                                     <div>
-
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">32.5</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
+                                    </div>
+                                    <div class="ut2-gl__buttons">
+                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
+                                        data-data-list="default" data-data-type="resource" data-data-key="3820"
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                 </div>
@@ -1491,14 +1409,6 @@
                                         title="Ламинат EGGER Classic Дуб Бардолино EPL035 33/4V" width="270"
                                         height="270" />
                                     </a>
-                                    <div class="ut2-gl__buttons">
-                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
-                                        data-data-list="default" data-data-type="resource" data-data-key="3821"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
-                                    </div>
                                   </div>
                                   <div class="ut2-gl__name">
                                     <a href="napolnye-pokrytiya/laminat/laminat-egger-classic-dub-bardolino-epl035/"
@@ -1509,19 +1419,28 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__price pr-col" style="min-height: 37px;">
                                     <div>
-
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">32.5</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
+                                    </div>
+                                    <div class="ut2-gl__buttons">
+                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
+                                        data-data-list="default" data-data-type="resource" data-data-key="3821"
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                 </div>
@@ -1548,14 +1467,6 @@
                                         title="Ламинат EGGER Classic Дуб Бардолино серый EPL036 32/4V" width="270"
                                         height="270" />
                                     </a>
-                                    <div class="ut2-gl__buttons">
-                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
-                                        data-data-list="default" data-data-type="resource" data-data-key="3822"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
-                                    </div>
                                   </div>
                                   <div class="ut2-gl__name">
                                     <a href="napolnye-pokrytiya/laminat/laminat-egger-classic-dub-bardolino-seryy-epl036/"
@@ -1566,19 +1477,28 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__price pr-col" style="min-height: 37px;">
                                     <div>
-
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">28</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
+                                    </div>
+                                    <div class="ut2-gl__buttons">
+                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
+                                        data-data-list="default" data-data-type="resource" data-data-key="3822"
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                 </div>
@@ -1604,14 +1524,6 @@
                                         title="Ламинат EGGER Classic Дуб Мелба 8мм натуральный EPL190" width="270"
                                         height="270" />
                                     </a>
-                                    <div class="ut2-gl__buttons">
-                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
-                                        data-data-list="default" data-data-type="resource" data-data-key="3823"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
-                                    </div>
                                   </div>
                                   <div class="ut2-gl__name">
                                     <a href="napolnye-pokrytiya/laminat/laminat-egger-classic-dub-melba-naturalnyy-epl190-ru/"
@@ -1622,19 +1534,28 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__price pr-col" style="min-height: 37px;">
                                     <div>
-
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">21.8</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
+                                    </div>
+                                    <div class="ut2-gl__buttons">
+                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
+                                        data-data-list="default" data-data-type="resource" data-data-key="3823"
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                 </div>
@@ -1658,14 +1579,6 @@
                                         alt="Ламинат EGGER Classic Дуб Песочный H2703 - фото 5311"
                                         title="Ламинат EGGER Classic Дуб Песочный H2703" width="270" height="270" />
                                     </a>
-                                    <div class="ut2-gl__buttons">
-                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
-                                        data-data-list="default" data-data-type="resource" data-data-key="3824"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
-                                    </div>
                                   </div>
                                   <div class="ut2-gl__name">
                                     <a href="napolnye-pokrytiya/laminat/laminat-egger-classic-dub-pesochnyy-h2703/"
@@ -1682,12 +1595,22 @@
                                   </div>
                                   <div class="ut2-gl__price pr-col" style="min-height: 37px;">
                                     <div>
-
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">0</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
+                                    </div>
+                                    <div class="ut2-gl__buttons">
+                                      <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
+                                        data-data-list="default" data-data-type="resource" data-data-key="3824"
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                 </div>
@@ -1714,10 +1637,13 @@
                                     <div class="ut2-gl__buttons">
                                       <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
                                         data-data-list="default" data-data-type="resource" data-data-key="4252"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__name">
@@ -1728,8 +1654,7 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
@@ -1739,7 +1664,7 @@
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">32.5</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
                                     </div>
                                   </div>
@@ -1769,10 +1694,13 @@
                                     <div class="ut2-gl__buttons">
                                       <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
                                         data-data-list="default" data-data-type="resource" data-data-key="4253"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__name">
@@ -1784,8 +1712,7 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
@@ -1795,7 +1722,7 @@
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">32.5</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
                                     </div>
                                   </div>
@@ -1825,10 +1752,13 @@
                                     <div class="ut2-gl__buttons">
                                       <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
                                         data-data-list="default" data-data-type="resource" data-data-key="4254"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__name">
@@ -1840,8 +1770,7 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
@@ -1851,7 +1780,7 @@
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">32.5</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
                                     </div>
                                   </div>
@@ -1879,10 +1808,13 @@
                                     <div class="ut2-gl__buttons">
                                       <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
                                         data-data-list="default" data-data-type="resource" data-data-key="4255"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__name">
@@ -1893,8 +1825,7 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
@@ -1904,7 +1835,7 @@
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">32.5</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
                                     </div>
                                   </div>
@@ -1934,10 +1865,13 @@
                                     <div class="ut2-gl__buttons">
                                       <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
                                         data-data-list="default" data-data-type="resource" data-data-key="4256"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__name">
@@ -1949,8 +1883,7 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
@@ -1960,7 +1893,7 @@
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">32.5</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
                                     </div>
                                   </div>
@@ -1989,10 +1922,13 @@
                                     <div class="ut2-gl__buttons">
                                       <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
                                         data-data-list="default" data-data-type="resource" data-data-key="4257"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__name">
@@ -2004,8 +1940,7 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
@@ -2015,7 +1950,7 @@
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">41.1</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
                                     </div>
                                   </div>
@@ -2045,10 +1980,13 @@
                                     <div class="ut2-gl__buttons">
                                       <a class="msfavorites ut2-add-to-wish cm-submit	 cm-tooltip" data-click
                                         data-data-list="default" data-data-type="resource" data-data-key="4258"
-                                        title="Добавить в список отложенных товаров"><i
-                                          class="ut2-icon-baseline-favorite"></i></a>
-                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><i
-                                          class="ut2-icon-baseline-equalizer"></i></a>
+                                        title="Добавить в список отложенных товаров"><svg width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#heart"></use>
+                                        </svg></a>
+                                      <a class="ut2-add-to-compare cm-ajax cm-ajax-full-render cm-tooltip"><svg
+                                          width="14" height="14">
+                                          <use href="assets/templates/new/images/sprite.svg#compare"></use>
+                                        </svg></a>
                                     </div>
                                   </div>
                                   <div class="ut2-gl__name">
@@ -2060,8 +1998,7 @@
                                   <div class="ut2-gl__amount">
                                     <div class="stock-wrap">
                                       <div class="ty-control-group product-list-field">
-                                        <span class="ty-qty-in-stock ty-control-group__item"><i
-                                            class="ut2-icon-outline-check-circle"></i>В наличии</span>
+                                        <span class="ty-qty-in-stock ty-control-group__item">В наличии</span>
                                       </div>
                                     </div>
                                   </div>
@@ -2071,7 +2008,7 @@
                                       <span class="ty-price-update">
                                         <span class="ty-price"><bdi><span class="ty-price-num">41.1</span>&nbsp;<span
                                               class="ty-price-num">p</span></bdi></span>
-                                        <span>м.кв</span>
+                                        <span>/ м.кв</span>
                                       </span>
                                     </div>
                                   </div>
@@ -2603,8 +2540,8 @@
           if (elm.length) {
             $('.ty-float-left:contains(.ty-scroller-list),.ty-float-right:contains(.ty-scroller-list)').css('width', '100%');
 
-            var item = 5,
-              itemsDesktop = 5,
+            var item = 4,
+              itemsDesktop = 4,
               itemsDesktopSmall = 4;
             itemsTablet = 4;
             itemsTabletSmall = 2;
@@ -2631,6 +2568,7 @@
             elm.owlCarousel({
               direction: 'ltr',
               items: item,
+              nav: true,
               itemsDesktop: desktop,
               itemsDesktopSmall: desktopSmall,
               itemsTablet: tablet,
@@ -2641,9 +2579,9 @@
               lazyLoad: true,
               slideSpeed: 400,
               stopOnHover: true,
-              navigation: true,
+              navigation: false,
               navigationText: ['<i class="ty-icon-left-open-thin"></i>', '<i class="ty-icon-right-open-thin"></i>'],
-              pagination: false,
+              pagination: true,
 
               afterUpdate: function () {
                 fn_abt__ut2_calc_cell(elm);
@@ -2662,8 +2600,8 @@
         if (elm.length) {
           $('.ty-float-left:contains(.ty-scroller-list),.ty-float-right:contains(.ty-scroller-list)').css('width', '100%');
 
-          var item = 5,
-            itemsDesktop = 5,
+          var item = 4,
+            itemsDesktop = 4,
             itemsDesktopSmall = 4;
           itemsTablet = 4;
           itemsTabletSmall = 2;
@@ -2700,9 +2638,9 @@
             lazyLoad: true,
             slideSpeed: 400,
             stopOnHover: true,
-            navigation: true,
+            navigation: false,
             navigationText: ['<i class="ty-icon-left-open-thin"></i>', '<i class="ty-icon-right-open-thin"></i>'],
-            pagination: false,
+            pagination: true,
 
             afterUpdate: function () {
               fn_abt__ut2_calc_cell(elm);
