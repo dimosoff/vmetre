@@ -216,11 +216,11 @@
 
                 <nav class="menu-body hover-menu">
                   <ul class="menu-hover__body">
-                    <li class="burger-item__info burger-item__info-el1 first active">
+                    <li class="burger-item__info burger-item__info-el1 first">
                       <a href="napolnye-pokrytiya/" class="hover-menu-title">Напольные покрытия</a>
                       <span class="burger-logo burger-logo1"></span>
                       <ul class="second-menu second-menu-el1">
-                        <li class="second-menu__item first active"><a href="napolnye-pokrytiya/laminat/">Ламинат</a>
+                        <li class="second-menu__item first"><a href="napolnye-pokrytiya/laminat/">Ламинат</a>
                         </li>
                         <li class="second-menu__item "><a href="napolnye-pokrytiya/linoleum/">Линолеум</a></li>
                         <li class="second-menu__item "><a href="napolnye-pokrytiya/terrasnaya-doska/">Террасная доска
@@ -241,7 +241,7 @@
                             доска</a></li>
                       </ul>
                     </li>
-                    <li class="burger-item__info burger-item__info-el2 ">
+                    <li class="burger-item__info burger-item__info-el2">
                       <a href="otdelochnye-materialy/" class="hover-menu-title">Отделочные материалы</a>
                       <span class="burger-logo burger-logo2"></span>
                       <ul class="second-menu second-menu-el2">
@@ -1154,6 +1154,30 @@
             .ut2-scroller-advanced > .ut2-gl__item:nth-child(n+5) {
               display: none;
             }
+            @media screen and (max-width: 1023px) {
+              .ut2-scroller-advanced > .ut2-gl__item {
+                width: 33.3333%;
+              }
+              .ut2-scroller-advanced > .ut2-gl__item:nth-child(n+4) {
+                display: none;
+              }
+            }
+            @media screen and (max-width: 767px) {
+              .ut2-scroller-advanced > .ut2-gl__item {
+                width: 50%;
+              }
+              .ut2-scroller-advanced > .ut2-gl__item:nth-child(n+3) {
+                display: none;
+              }
+            }
+            @media screen and (max-width: 479px) {
+              .ut2-scroller-advanced > .ut2-gl__item {
+                width: 100%;
+              }
+              .ut2-scroller-advanced > .ut2-gl__item:nth-child(n+2) {
+                display: none;
+              }
+            }
           </style>
           <div class="container-fluid-row">
             <div class="row-fluid ">
@@ -2033,7 +2057,11 @@
 
                   <div class="row-fluid benefits">
                     <div class="span5 benefit delivery">
-                      <i class="ut2-icon-outline-local_shipping"></i>
+                      <i>
+                        <svg width="30" height="30">
+                          <use href="assets/templates/new/images/sprite.svg#delivery"></use>
+                        </svg>
+                      </i>
                       <div class="content">
                         <!--  href="https://vmetre.by/dostavka-i-oplata/" rel="nofollow" -->
                         <header style="text-decoration: none;"><span>Быстро и качественно доставляем</span></header>
@@ -2041,7 +2069,11 @@
                       </div>
                     </div>
                     <div class="span6 benefit warranty">
-                      <i class="ut2-icon-outline-verified_user"></i>
+                      <i>
+                        <svg width="30" height="30">
+                          <use href="assets/templates/new/images/sprite.svg#shield"></use>
+                        </svg>
+                      </i>
                       <div class="content">
                         <!--  href="https://vmetre.by/" rel="nofollow" -->
                         <header style="text-decoration: none;"><span>Гарантия качества и сервисное обслуживание</span>
@@ -2050,7 +2082,11 @@
                       </div>
                     </div>
                     <div class="span5 benefit exchange">
-                      <i class="ut2-icon-outline-archive"></i>
+                      <i>
+                        <svg width="30" height="30">
+                          <use href="assets/templates/new/images/sprite.svg#package"></use>
+                        </svg>
+                      </i>
                       <div class="content">
                         <!--  href="https://vmetre.by/vozvrat/" rel="nofollow" -->
                         <header style="text-decoration: none;"><span>Возврат товара в течение 14 дней</span></header>
@@ -2542,9 +2578,9 @@
 
             var item = 4,
               itemsDesktop = 4,
-              itemsDesktopSmall = 4;
-            itemsTablet = 4;
-            itemsTabletSmall = 2;
+              itemsDesktopSmall = 3;
+            itemsTablet = 3;
+            itemsTabletSmall = 1;
             itemsMobile = 1;
 
             if (item > 3) {
@@ -2602,9 +2638,9 @@
 
           var item = 4,
             itemsDesktop = 4,
-            itemsDesktopSmall = 4;
-          itemsTablet = 4;
-          itemsTabletSmall = 2;
+            itemsDesktopSmall = 3;
+          itemsTablet = 3;
+          itemsTabletSmall = 1;
           itemsMobile = 1;
 
           if (item > 3) {
