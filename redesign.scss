@@ -182,6 +182,9 @@ body.is_scrolled .menu-wrapper {
   max-width: 870px;
   line-height: 1.8;
 }
+.ty-wysiwyg-content.full {
+  max-width: 100%;
+}
 .ty-wysiwyg-content * {
   padding: 0;
 }
@@ -1518,9 +1521,6 @@ body .calc-prod .ut2-pb__right {
 
 /** product-page content features **/
 
-.content-features > * {
-  max-width: 865px;
-}
 #vopros_form > .row_form {
   gap: 30px;
   display: flex;
