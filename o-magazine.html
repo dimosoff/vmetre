@@ -379,22 +379,18 @@
           <div class="tygh-content clearfix">
               <div class="container-fluid  content-grid">
                   <div class="container-fluid-row">
-  <div class="row-fluid ">        
-      <div class="span16 breadcrumbs-grid ">
-          <div id="breadcrumbs_158">
-  <div class="ty-breadcrumbs clearfix" itemscope="" itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" class="ty-breadcrumbs__a" itemprop="item"><span itemprop="name">Главная</span><meta itemprop="position" content="1"></a></span><span class="ty-breadcrumbs__slash">/</span>
-<span class="ty-breadcrumbs__current">О магазине</span></div>
-          </div>
-      </div>
-  </div>
-</div>
-                  <div class="container-fluid-row">
                       <div class="row-fluid">        
                           <div class="span16  ">
                               <div class="ty-sidebox-important">
                                   <div class="ty-sidebox-important__title">
                                       <h1 class="ty-sidebox-important__title-wrapper">О магазине</h1>
                                   </div>
+                                    <div class="breadcrumbs-grid ">
+                                        <div id="breadcrumbs_158">
+                                <div class="ty-breadcrumbs clearfix" itemscope="" itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" class="ty-breadcrumbs__a" itemprop="item"><span itemprop="name">Главная</span><meta itemprop="position" content="1"></a></span><span class="ty-breadcrumbs__slash">/</span>
+                                <span class="ty-breadcrumbs__current">О магазине</span></div>
+                                        </div>
+                                    </div>
                                   <div class="ty-sidebox-important__body">
                                       <div class="ty-wysiwyg-content" data-ca-live-editor-object-id="56" data-ca-live-editor-object-type="pages">
                                           <p><strong>«Вметре»</strong> — это магазин стройматериалов, где можно найти все для качественного ремонта:</p>
@@ -429,11 +425,12 @@
 </li>
 </ol>
 <p>Посоветуем бригаду, которая поможет сделать ремонт — вам не придется искать подрядчиков.</p>
-<p>Свяжитесь с нами по указанным телефонам, пишите в Viber, Telegram, чат-бот. Подпишитесь в Instagram, чтобы оставаться в курсе акций и скидок.&nbsp;</p>
-<p>&nbsp;</p>
-<p><a href="https://vmetre.by/"><strong>&nbsp;</strong></a></p>
+<p>Свяжитесь с нами по указанным телефонам, пишите в Viber, Telegram, чат-бот. Подпишитесь в Instagram, чтобы оставаться в курсе акций и скидок.</p>
+<p><a href="https://vmetre.by/"></a></p>
+<div style="border:1px solid #D9D9D9;padding: 20px;display: inline-block;">
 <h3>Реквизиты компании</h3>
 <p>ИП Изотов Дмитрий Вадимович<br> УНП 193557396, зарегистрирован в торговом реестре 512199 от 11 июня 2021г, <br> свидетельство о регистрации 193557396 от 09.06.2021 Минским горисполкомом<br> Юридический адрес: Пр-т Рокоссовского 76-212, 220095, г. Минск</p>
+</div>
                                       </div>
                                   </div>
                               </div>
@@ -599,12 +596,12 @@
             <form method="post" class="ajax_form" id="zvon">
 
                 <div class="ty-control-group">
-                    <label class="ty-control-group__title" for="name_b">Ваше имя</label>
+                    <label class="ty-control-group__title" for="name_b" hidden="">Ваше имя</label>
                     <input id="name_b" size="50" class="ty-input-text-full" type="text" name="name" value="" placeholder="Ваше имя *" />
                 </div>
 
                 <div class="ty-control-group">
-                    <label for="phone_b" class="ty-control-group__title cm-mask-phone-label cm-required">Телефон</label>
+                    <label for="phone_b" class="ty-control-group__title cm-mask-phone-label cm-required" hidden="">Телефон</label>
                     <input id="phone_b" class="ty-input-text-full cm-mask-phone ty-inputmask-bdi" size="50" type="text"
                         name="tel" value="" data-enable-custom-mask="true" placeholder="Телефон *" />
                 </div>
@@ -660,7 +657,7 @@
                     </div>
 
 
-                    <div class="ty-cr-or">— или —</div>
+                    <!-- <div class="ty-cr-or">— или —</div> -->
 
                     <div class="ty-control-group">
                         <label for="call_data_buy_now_with_one_click_5186_email"
@@ -700,15 +697,15 @@
                         </b>
                     </div>
                     <div class="ty-control-group">
-                        <label class="ty-control-group__title" for="name_a">Ваше имя</label>
-                        <input id="name_a" size="50" class="ty-input-text-full" type="text" name="name" value="" />
+                        <label class="ty-control-group__title" for="name_a" hidden="">Ваше имя</label>
+                        <input id="name_a" size="50" class="ty-input-text-full" type="text" name="name" value="" placeholder="Ваше имя *" />
                     </div>
 
                     <div class="ty-control-group">
                         <label for="phone_a"
-                            class="ty-control-group__title cm-mask-phone-label cm-required">Телефон</label>
+                            class="ty-control-group__title cm-mask-phone-label cm-required" hidden="">Телефон</label>
                         <input id="phone_a" class="ty-input-text-full cm-mask-phone ty-inputmask-bdi" size="50"
-                            type="text" name="tel" value="" data-enable-custom-mask="true" />
+                            type="text" name="tel" value="" data-enable-custom-mask="true" placeholder="Телефон *" />
                     </div>
 
                     <div class="buttons-container">

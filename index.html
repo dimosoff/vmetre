@@ -2042,14 +2042,14 @@
             <form method="post" class="ajax_form" id="zvon">
 
                 <div class="ty-control-group">
-                    <label class="ty-control-group__title" for="name_b">Ваше имя</label>
-                    <input id="name_b" size="50" class="ty-input-text-full" type="text" name="name" value="" />
+                    <label class="ty-control-group__title" for="name_b" hidden="">Ваше имя</label>
+                    <input id="name_b" size="50" class="ty-input-text-full" type="text" name="name" value="" placeholder="Ваше имя *" />
                 </div>
 
                 <div class="ty-control-group">
-                    <label for="phone_b" class="ty-control-group__title cm-mask-phone-label cm-required">Телефон</label>
+                    <label for="phone_b" class="ty-control-group__title cm-mask-phone-label cm-required" hidden="">Телефон</label>
                     <input id="phone_b" class="ty-input-text-full cm-mask-phone ty-inputmask-bdi" size="50" type="text"
-                        name="tel" value="" data-enable-custom-mask="true" />
+                        name="tel" value="" data-enable-custom-mask="true" placeholder="Телефон *" />
                 </div>
 
                 <div class="ty-control-group">
@@ -2088,28 +2088,28 @@
                     </div>
 
                     <div class="ty-control-group">
-                        <label class="ty-control-group__title" for="call_data_buy_now_with_one_click_5186_name">Ваше
+                        <label class="ty-control-group__title" for="call_data_buy_now_with_one_click_5186_name" hidden="">Ваше
                             имя</label>
                         <input id="call_data_buy_now_with_one_click_5186_name" size="50" class="ty-input-text-full"
-                            type="text" name="name" value="">
+                            type="text" name="name" value="" placeholder="Ваше имя *">
                     </div>
 
                     <div class="ty-control-group">
                         <label for="call_data_buy_now_with_one_click_5186_phone"
-                            class="ty-control-group__title cm-mask-phone-label">Телефон</label>
+                            class="ty-control-group__title cm-mask-phone-label" hidden="">Телефон</label>
                         <input id="call_data_buy_now_with_one_click_5186_phone"
                             class="ty-input-text-full cm-mask-phone ty-inputmask-bdi js-mask-phone-inited" size="50"
-                            type="text" name="tel" value="" data-enable-custom-mask="true" inputmode="numeric">
+                            type="text" name="tel" value="" data-enable-custom-mask="true" inputmode="numeric" placeholder="Телефон *">
                     </div>
 
 
-                    <div class="ty-cr-or">— или —</div>
+                    <!-- <div class="ty-cr-or">— или —</div> -->
 
                     <div class="ty-control-group">
                         <label for="call_data_buy_now_with_one_click_5186_email"
-                            class="ty-control-group__title cm-email">E-mail</label>
+                            class="ty-control-group__title cm-email" hidden="">E-mail</label>
                         <input id="call_data_buy_now_with_one_click_5186_email" class="ty-input-text-full" size="50"
-                            type="text" name="email" value="">
+                            type="text" name="email" value="" placeholder="E-mail *">
                     </div>
                     <input type="hidden" name="ValToSend" value="Отделочные материалы">
 
@@ -2143,24 +2143,21 @@
                         </b>
                     </div>
                     <div class="ty-control-group">
-                        <label class="ty-control-group__title" for="name_a">Ваше имя</label>
-                        <input id="name_a" size="50" class="ty-input-text-full" type="text" name="name" value="" />
+                        <label class="ty-control-group__title" for="name_a" hidden="">Ваше имя</label>
+                        <input id="name_a" size="50" class="ty-input-text-full" type="text" name="name" value="" placeholder="Ваше имя *" />
                     </div>
 
                     <div class="ty-control-group">
                         <label for="phone_a"
-                            class="ty-control-group__title cm-mask-phone-label cm-required">Телефон</label>
+                            class="ty-control-group__title cm-mask-phone-label cm-required" hidden="">Телефон</label>
                         <input id="phone_a" class="ty-input-text-full cm-mask-phone ty-inputmask-bdi" size="50"
-                            type="text" name="tel" value="" data-enable-custom-mask="true" />
+                            type="text" name="tel" value="" data-enable-custom-mask="true" placeholder="Телефон *" />
                     </div>
 
                     <div class="buttons-container">
                         <button class="ty-btn__primary ty-btn__big ty-btn ty-btn"
                             type="submit"><span><span>Отправить</span></span></button>
                     </div>
-
-
-
 
                     <input type="hidden" name="af_action" value="fc6246de525fbb5e5f6ca1dc0f144fbf" />
                 </form>
