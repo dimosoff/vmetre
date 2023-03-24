@@ -214,6 +214,10 @@ body.is_scrolled .menu-wrapper {
   padding-top: 2em;
 }
 
+.ty-wysiwyg-content.fz16 * + * {
+  font-size: 16px;
+}
+
 .ty-wysiwyg-content ul {
   list-style-type: none;
 }
@@ -236,13 +240,13 @@ body.is_scrolled .menu-wrapper {
   content: "·";
   position: absolute;
   font-size: 1.9em;
-  line-height: 1em;
-  vertical-align: -0.1em;
+  line-height: 0.7em;
 }
 
 .ty-wysiwyg-content h2 {
   font-size: 24px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .ty-wysiwyg-content h3 {
@@ -309,6 +313,11 @@ body.is_scrolled .menu-wrapper {
 .ty-wysiwyg-content table *:not(thead) *:first-child > td:first-child,
 .ty-wysiwyg-content table *:not(thead) *:first-child > * + td {
   border: 1px solid #d9d9d9;
+}
+
+.ty-wysiwyg-content a {
+  font-weight: inherit;
+  text-decoration: underline;
 }
 
 /** wysiwyg end **/
@@ -558,15 +567,6 @@ select:focus {
   border-color: #d9d9d9;
 }
 
-.ty-btn {
-  height: 45px;
-  border-radius: 0;
-}
-
-.ty-btn__primary {
-  background: #ffd600;
-}
-
 .ty-cr-product-button,
 .ty-product-filters__reset-button {
   border: 1px solid #333;
@@ -788,6 +788,14 @@ select:focus {
   line-height: 18px;
 }
 
+.ut2-add-to-wish.voted {
+  background-color: #ffc700;
+}
+
+.ut2-add-to-wish.voted svg {
+  color: #fff;
+}
+
 .ty-product-list__body .ty-price-update .ty-price-num {
   font-size: 20px;
   font-weight: 600;
@@ -843,8 +851,10 @@ select:focus {
 }
 
 .ty-btn {
-  font-family: inherit;
+  height: 45px;
   font-weight: 400;
+  font-family: inherit;
+  border-radius: 0;
 }
 
 .ty-btn svg {
@@ -858,6 +868,7 @@ select:focus {
 
 .ty-btn__primary {
   color: #333333;
+  background: #ffd600;
 }
 
 .ty-btn__primary:hover {
@@ -1138,6 +1149,7 @@ select:focus {
 
 .row-fluid .span8 {
   width: 100%;
+  margin-left: 0;
 }
 
 .ty-sidebox-important__title + .ty-sidebox-important__body {
@@ -1197,6 +1209,16 @@ select:focus {
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.3s;
+}
+
+.ty-wish-list__buttons {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.ty-wish-list__buttons a {
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 /** popup dialog **/
@@ -1348,6 +1370,7 @@ div.ui-dialog .ui-dialog-content {
   border: none;
   padding: 0;
   margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .ty-sidebox-important__title-wrapper {
@@ -1675,7 +1698,7 @@ body .calc-prod .ut2-pb__right {
 }
 @media screen and (max-width: 812px) {
   .ut2-pb__img-wrapper,
-  .ut2-pb__right {
+.ut2-pb__right {
     flex: 1 1 100%;
     max-width: 100%;
   }
@@ -1781,8 +1804,8 @@ body .calc-prod .ut2-pb__right {
 }
 @media (max-width: 540px) {
   .row_form_a,
-  .row_form_b,
-  #vopros_form textarea {
+.row_form_b,
+#vopros_form textarea {
     width: 100%;
   }
 }
@@ -1917,6 +1940,7 @@ a.ty-quick-view__title {
   min-height: 0;
   max-height: none;
   -webkit-hyphens: none;
+      -ms-hyphens: none;
           hyphens: none;
 }
 
@@ -1924,6 +1948,7 @@ a.ty-quick-view__title {
 .owl-carousel:not(.ty-scroller-pd).ty-scroller-list .ut2-gl__item:hover .ut2-gl__name .product-title {
   max-height: none;
   -webkit-hyphens: none;
+      -ms-hyphens: none;
           hyphens: none;
 }
 
@@ -2112,6 +2137,7 @@ a.ty-quick-view__title {
 .ab__mb_item-name {
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
 }
@@ -2317,8 +2343,8 @@ a.ty-quick-view__title {
     padding-right: 0;
   }
   .ab__sf_cat_desc .ty-wysiwyg-content p,
-  .ab__sf_cat_desc .ty-wysiwyg-content li,
-  .ab__sf_cat_desc .ty-wysiwyg-content tr > * {
+.ab__sf_cat_desc .ty-wysiwyg-content li,
+.ab__sf_cat_desc .ty-wysiwyg-content tr > * {
     font-size: 16px;
   }
 }
@@ -2392,12 +2418,12 @@ a.ty-quick-view__title {
     margin-top: 0;
   }
   .second-menu.second-menu-el7,
-  .second-menu.second-menu-el6,
-  .second-menu.second-menu-el5,
-  .second-menu.second-menu-el4,
-  .second-menu.second-menu-el3,
-  .second-menu.second-menu-el2,
-  .second-menu.second-menu-el1 {
+.second-menu.second-menu-el6,
+.second-menu.second-menu-el5,
+.second-menu.second-menu-el4,
+.second-menu.second-menu-el3,
+.second-menu.second-menu-el2,
+.second-menu.second-menu-el1 {
     top: 100%;
     width: 100%;
     height: 330px;
@@ -2427,17 +2453,21 @@ a.ty-quick-view__title {
     margin-top: auto;
   }
 }
+@media (min-width: 1224px) {
+  .row-fluid .span8 {
+    float: none;
+  }
+}
 @media screen and (max-width: 1124px) and (min-width: 768px) {
   .ty-product-list .ut2-pl__control {
     min-width: 0;
     max-width: none;
   }
 }
-@media (min-width: 1224px) {
-  .row-fluid .span8 {
-    width: 100%;
-    float: none;
-    margin-left: 0;
+@media screen and (max-width: 960px) and (min-width: 481px) {
+  .grid-list div[class^=ty-column] {
+    min-width: 0;
+    max-width: 33.3333333333%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -2463,11 +2493,11 @@ a.ty-quick-view__title {
     font-size: 14px;
   }
   input[type=text],
-  input[type=password],
-  input[type=tel],
-  input[type=number],
-  textarea,
-  select {
+input[type=password],
+input[type=tel],
+input[type=number],
+textarea,
+select {
     font-size: 14px;
   }
 }
@@ -2483,7 +2513,7 @@ a.ty-quick-view__title {
     margin: 0;
   }
   .ty-breadcrumbs__a,
-  .ty-breadcrumbs__current {
+.ty-breadcrumbs__current {
     font-size: 12px;
   }
   .ty-breadcrumbs__slash {
@@ -2491,7 +2521,7 @@ a.ty-quick-view__title {
     font-size: 12px;
   }
   .ty-breadcrumbs__current,
-  .ty-breadcrumbs + a.ut2-btn.hidden {
+.ty-breadcrumbs + a.ut2-btn.hidden {
     display: inline-block;
   }
   .ut2-extra-block-title .ty-mainbox-title {
@@ -2512,16 +2542,17 @@ a.ty-quick-view__title {
     padding: 20px 30px;
   }
   .is_scrolled .ty-dropdown-box.ut2-filters div.ty-dropdown-box__content,
-  .is_scrolled .ty-dropdown-box.ut2-categories div.ty-dropdown-box__content {
+.is_scrolled .ty-dropdown-box.ut2-categories div.ty-dropdown-box__content {
     top: 59px;
   }
   .ty-dropdown-box.ut2-filters .ut2-btn-close,
-  .ty-dropdown-box.ut2-categories .ut2-btn-close {
+.ty-dropdown-box.ut2-categories .ut2-btn-close {
     top: 10px;
     right: 10px;
   }
   .ty-wysiwyg-content td,
-  .ty-wysiwyg-content th {
+.ty-wysiwyg-content th {
+    min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
   }
@@ -2555,7 +2586,7 @@ a.ty-quick-view__title {
     margin-bottom: 0;
   }
   .ty-dropdown-box.ut2-filters .ty-dropdown-box__title,
-  .ty-dropdown-box.ut2-categories .ty-dropdown-box__title {
+.ty-dropdown-box.ut2-categories .ty-dropdown-box__title {
     height: 35px;
     border: none;
     padding: 0;
@@ -2564,7 +2595,7 @@ a.ty-quick-view__title {
     border-radius: 0;
   }
   .ty-dropdown-box.ut2-filters .ty-dropdown-box__title:hover,
-  .ty-dropdown-box.ut2-categories .ty-dropdown-box__title:hover {
+.ty-dropdown-box.ut2-categories .ty-dropdown-box__title:hover {
     box-shadow: none;
     background: #ffc700;
   }
@@ -2577,12 +2608,12 @@ a.ty-quick-view__title {
     padding: 0;
   }
   .mse2_pagination,
-  .ab__sf_cat_desc {
+.ab__sf_cat_desc {
     float: none;
     width: 100%;
   }
   .ty-pagination__item,
-  .ty-pagination__selected {
+.ty-pagination__selected {
     height: 35px;
     min-width: 35px;
     line-height: 35px;
@@ -2591,7 +2622,7 @@ a.ty-quick-view__title {
     display: none;
   }
   .ty-pagination .ty-pagination__selected + a,
-  .ty-pagination .ty-pagination__selected + a + a {
+.ty-pagination .ty-pagination__selected + a + a {
     display: inline-block !important;
   }
   .ty-wysiwyg-content * {
@@ -2613,9 +2644,9 @@ a.ty-quick-view__title {
     padding-right: 35px;
   }
   .ty-subheader,
-  div.ty-mainbox-title,
-  .ty-footer-form-block__title,
-  a.ty-quick-view__title {
+div.ty-mainbox-title,
+.ty-footer-form-block__title,
+a.ty-quick-view__title {
     font-size: 20px;
   }
   .ty-tabs__content .owl-theme .owl-controls .owl-page span {
@@ -2638,6 +2669,16 @@ a.ty-quick-view__title {
   .ty-wysiwyg-content .services-list a {
     font-size: 14px;
     padding-top: 1em;
+  }
+  .grid-list div[class^=ty-column] {
+    width: 50%;
+    max-width: 50%;
+  }
+  .ty-wish-list__buttons {
+    margin-top: 30px;
+  }
+  .ty-sidebox-important {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -2662,6 +2703,10 @@ a.ty-quick-view__title {
   .ty-wysiwyg-content .services-list > * {
     padding-top: 40px;
     padding-left: 15px;
+  }
+  .grid-list div[class^=ty-column] {
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 479px) {
