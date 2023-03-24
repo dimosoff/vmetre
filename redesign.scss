@@ -158,6 +158,7 @@ body.is_scrolled .menu-wrapper {
 }
 .second-menu {
   padding: 0;
+  overflow-y: auto;
 }
 .second-menu__item {
   padding: 0;
@@ -169,6 +170,102 @@ body.is_scrolled .menu-wrapper {
 .container-fluid-row,
 .container-fluid-row-full-width > .row-fluid {
   max-width: 1210px;
+}
+.ty-exception {
+  z-index: 1;
+}
+.ty-exception__title-info {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  padding-left: 0;
+}
+.ty-exception__code {
+  width: auto;
+  color: #333;
+  display: block;
+  font-size: 126px;
+  font-weight: 500;
+  line-height: 0.73;
+}
+.ty-exception__code span {
+  transform: scaleY(-1);
+  display: inline-block;
+  color: #ffd600;
+}
+.ty-exception__title {
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+}
+.ty-exception__links-item {
+  float: none;
+  margin-right: 0;
+}
+.ty-exception__links .ty-exception__links-a {
+  height: 60px;
+  padding: 5px 40px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.ty-exception-background::after,
+.ty-exception-background::before {
+  top: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("images/inner-background-left.png") center / contain no-repeat transparent;
+}
+.ty-exception-background::before {
+  left: 0;
+  width: 262px;
+  // height: 413px;
+  background-position: center left;
+}
+.ty-exception-background::after {
+  right: 0;
+  width: 448px;
+  // height: 496px;
+  background-image: url("images/inner-background-right.png");
+  background-position: center right;
+}
+
+@media screen and (max-width: 991px) {
+  .ty-exception-background::before {
+    width: 162px;
+  }
+  .ty-exception-background::after {
+    width: 348px;
+    right: -50px;
+  }
+  .ty-exception__title {
+    margin: 0 auto;
+    max-width: 340px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .ty-exception {
+    padding-bottom: 30px;
+  }
+  .ty-exception-background::before {
+    width: 112px;
+  }
+  .ty-exception-background::after {
+    right: -100px;
+    width: 298px;
+  }
+  .ty-exception__code {
+    font-size: 86px;
+  }
+  .ty-exception__title {
+    font-size: 16px;
+  }
+  .ty-exception__links .ty-exception__links-a {
+    height: 50px;
+    padding: 5px 30px;
+    font-size: 14px;
+  }
 }
 
 /** wysiwyg **/
