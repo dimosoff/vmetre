@@ -1284,16 +1284,25 @@ select:focus {
 .ty-qty-in-stock {
   color: #36844c;
 }
+.ty-qty-in-stock i,
+.ty-qty-out-of-stock i {
+  position: absolute;
+}
 .ty-qty-out-of-stock {
   color: #d75150;
 }
+.product-list-field {
+  position: relative;
+}
 .ty-qty-in-stock::before,
 .ty-qty-out-of-stock::before {
+  top: 0;
+  left: 0;
   width: 0.615em;
   height: 0.615em;
   content: "";
-  margin-top: 1px;
-  margin-right: 5px;
+  position: absolute;
+  margin-top: 3px;
   border-radius: 50%;
   background-color: currentColor;
 }
@@ -2125,6 +2134,13 @@ a.ty-quick-view__title {
 }
 .ut2-gl__amount {
   margin-bottom: 7px;
+}
+.ut2-gl__amount .ty-control-group__item {
+  position: relative;
+  padding-left: 13px;
+}
+.ut2-icon-outline-check-circle:before {
+  content: normal;
 }
 .ut2-gl__price {
   align-items: center;
