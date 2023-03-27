@@ -1043,7 +1043,7 @@ select:focus {
 .main-content-grid,
 .side-grid {
   margin-top: 50px !important;
-  padding-bottom: 30px;
+  padding-bottom: 0;
 }
 
 .ut2-filters .ty-product-filters__wrapper fieldset {
@@ -1290,7 +1290,6 @@ select:focus {
   flex: 1 1 auto;
   float: none;
   max-width: 110px;
-  margin-left: 15px;
 }
 
 .ut2-gl__qty > div,
@@ -1310,6 +1309,7 @@ select:focus {
 
 .ty-product-list__body .ut2-pl__price > div:first-child {
   flex-shrink: 0;
+  margin-right: 15px;
 }
 
 .ty-product-list__body .ty-price-update {
@@ -1348,6 +1348,7 @@ select:focus {
 }
 
 .ty-product-list .ut2-pl__price {
+  flex-wrap: wrap;
   flex-direction: row;
   padding-bottom: 10px;
   justify-content: space-between;
@@ -1543,8 +1544,9 @@ select:focus {
 }
 
 .mse2_pagination {
+  width: 100%;
   float: right;
-  width: calc(100% - 291px);
+  padding-top: 50px;
 }
 
 .ty-pagination {
@@ -1837,6 +1839,11 @@ div.ui-dialog .ui-dialog-content {
   }
   .ui-dialog .ty-control-group__title {
     display: inline-block;
+  }
+}
+@media screen and (min-width: 767px) {
+  #mse2_mfilter .hidden-desktop {
+    margin-bottom: 99px;
   }
 }
 @media screen and (max-width: 767px) {
