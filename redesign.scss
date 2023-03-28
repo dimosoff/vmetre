@@ -581,6 +581,9 @@ body.is_scrolled .menu-wrapper {
 .ty-wysiwyg-content[class*="description"]:not(.content-features) {
   padding: 20px 25px;
 }
+.ty-wysiwyg-content[class*="description"]:not(.content-features):empty {
+  display: none;
+}
 .ty-wysiwyg-content {
   max-width: 870px;
   line-height: 1.8;
@@ -591,7 +594,7 @@ body.is_scrolled .menu-wrapper {
 .ty-wysiwyg-content * {
   padding: 0;
 }
-.ty-wysiwyg-content * + * {
+.ty-wysiwyg-content > * + * {
   font-size: 14px;
   padding-top: 2em;
 }
@@ -1508,7 +1511,7 @@ select:focus {
 /** popup dialog **/
 
 .ui-widget-content {
-  background: #ddd;
+  background: #fff;
 }
 div.ui-dialog .ui-dialog-titlebar {
   height: auto;
