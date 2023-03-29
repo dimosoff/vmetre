@@ -368,3 +368,7 @@ if (popularWrappers.length) {
     });
   });
 }
+
+$(".ut2-filters .ty-product-filters__switch").on("click", function () {
+  $(this).toggleClass("open");
+});
