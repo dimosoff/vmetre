@@ -1,8 +1,3 @@
-@import "assets/templates/vmetre/css/style";
-@import "assets/templates/vmetre/css/dop";
-@import "assets/templates/new/dop";
-@import "assets/templates/new/styles";
-
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
@@ -136,9 +131,6 @@ body.is_scrolled .menu-wrapper {
   right: 20px;
   position: relative;
   transform: translateY(-50%);
-}
-.burger-item__info .burger-logo.active {
-  transform: translateY(-50%) rotate(90deg);
 }
 .burger-menu {
   cursor: pointer;
@@ -641,6 +633,7 @@ footer {
 .litecheckout__row {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 .litecheckout__row > *:first-child {
   flex: 1 1 0%;
@@ -1185,6 +1178,9 @@ select:focus {
 .ui-slider-horizontal .ui-slider-handle {
   top: -0.4em;
 }
+.ui-menu .ui-state-focus {
+  outline: none;
+}
 .ut2-filters .ty-product-filters__switch .ty-product-filters__title {
   font-size: 16px;
   font-weight: 500;
@@ -1668,6 +1664,7 @@ select:focus {
       font-size: 16px;
       font-weight: 500;
       padding-top: 1.5em;
+      text-decoration: none;
 
       &:hover {
         text-decoration: none;
@@ -1735,6 +1732,9 @@ div.ui-dialog .ui-dialog-title {
   background: none right bottom / contain no-repeat transparent;
   margin-right: 10px;
   vertical-align: -0.1em;
+}
+.ui-dialog[aria-describedby="content_call"] .ui-dialog-title::before {
+  background-image: url("images/icons/phone.svg");
 }
 .ui-dialog[aria-describedby="one_click"] .ui-dialog-title::before {
   background-image: url("images/icons/cart.svg");
@@ -1814,12 +1814,19 @@ div.ui-dialog .buttons-container button:hover {
   padding: 0 40px;
 }
 .ui-dialog .ty-cr-product-info-container {
+  flex-wrap: nowrap;
   margin-bottom: 20px;
 }
+.ui-dialog .ty-cr-product-info-container:before,
+.ui-dialog .ty-cr-product-info-container:after {
+  content: normal;
+}
+
 .ui-dialog .ty-cr-product-info-image {
   width: 140px;
   height: auto;
   padding: 0;
+  flex-shrink: 0;
 }
 .ui-dialog .ty-cr-product-info-header {
   padding: 0 0 0 20px;
@@ -2933,6 +2940,10 @@ input[type="text"].input-search-panel {
   .burger-item__info .burger-logo {
     top: 25px;
   }
+  .burger-item__info .burger-logo.active,
+  .burger-item__info.active .burger-logo {
+    transform: translateY(-50%) rotate(90deg);
+  }
   body.is_scrolled .header-nav {
     top: 58px;
   }
@@ -3249,6 +3260,18 @@ input[type="text"].input-search-panel {
   .ty-sidebox-important {
     margin-bottom: 30px;
   }
+  .ui-dialog .ty-cr-product-info-image {
+    width: 100px;
+  }
+  .ui-dialog .ty-product-block-title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .header-nav {
+    top: 123px;
+  }
 }
 @media screen and (max-width: 575px) {
   .mse2_results--flex > * {
@@ -3290,6 +3313,17 @@ input[type="text"].input-search-panel {
   .ty-wysiwyg-content * {
     line-height: 1.25;
   }
+  .ui-dialog .ui-dialog-title::before {
+    width: 20px;
+    height: 20px;
+  }
+  div.ui-dialog .ui-dialog-titlebar {
+    padding: 52px 23px 0;
+  }
+   div.ui-dialog .ui-dialog-content .object-container {
+    padding: 31px 23px 22px;
+  }
+   
 }
 @media screen and (max-width: 479px) {
   .span16 > .ty-tabs__content .owl-controls {
