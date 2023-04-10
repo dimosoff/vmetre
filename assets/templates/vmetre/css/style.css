@@ -17770,9 +17770,6 @@ div[class^="span"].side-grid .ty-product-list .ut2-pl__info {
   .ut2-gl__buttons .ut2-add-to-compare:not(.label),
   .ut2-gl__buttons .ut2-add-to-wish:not(.label) {
     background-color: transparent;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
   }
   .ut2-gl__buttons .ut2-add-to-compare:not(.label) i,
   .ut2-gl__buttons .ut2-add-to-wish:not(.label) i {

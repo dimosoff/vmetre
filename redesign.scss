@@ -1576,6 +1576,9 @@ select:focus {
   display: block;
   padding-left: 15px;
 }
+.ty-product-list .stock-wrap .ty-control-group__item span {
+  display: inline;
+}
 .ty-product-list .stock-wrap .ty-control-group__item i::before {
   content: "";
 }
@@ -2463,6 +2466,7 @@ a.ty-quick-view__title {
 }
 .owl-theme .owl-controls .owl-page {
   width: 11.1111%;
+  display: inline-block;
 }
 .ty-tabs__content .owl-theme .owl-controls .owl-page span {
   display: block;
@@ -2482,6 +2486,7 @@ a.ty-quick-view__title {
 }
 .span16 > .ty-tabs__content .owl-controls {
   margin-top: 44px;
+  text-align: center;
 }
 
 /** standalone **/
