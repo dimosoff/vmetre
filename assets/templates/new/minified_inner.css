@@ -21780,6 +21780,10 @@ body .calc-prod .ty-product-prices > *:last-child {
   }
 }
 /* <<<<< */
+.jGrowl .jGrowl-message {
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
